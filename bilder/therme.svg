@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="500" fill="#E6EEEC"/>
+  <!-- Säulen & Gewölbe -->
+  <path d="M0 0 H800 V60 Q600 20 400 60 Q200 20 0 60z" fill="#D4E0DD"/>
+  <g fill="#F3F0EA"><rect x="20" y="40" width="34" height="220"/><rect x="746" y="40" width="34" height="220"/></g>
+  <!-- Fliesenboden -->
+  <rect y="250" width="800" height="250" fill="#D9E3E0"/>
+  <g stroke="#C6D3CF" stroke-width="2"><path d="M0 300h800M0 360h800M0 430h800M100 250v250M240 250v250M400 250v250M560 250v250M700 250v250"/></g>
+  <!-- Becken -->
+  <g>
+    <!-- Whirlpool -->
+    <circle cx="150" cy="180" r="95" fill="#FFFCFA"/><circle cx="150" cy="180" r="80" fill="#7CC3C8"/>
+    <g fill="#FFFFFF" opacity=".8"><circle cx="120" cy="160" r="8"/><circle cx="170" cy="150" r="6"/><circle cx="150" cy="200" r="9"/><circle cx="185" cy="195" r="5"/><circle cx="115" cy="205" r="5"/></g>
+    <!-- Solebecken -->
+    <rect x="300" y="100" width="220" height="150" rx="20" fill="#FFFCFA"/><rect x="314" y="114" width="192" height="122" rx="14" fill="#9BD0CC"/>
+    <!-- Außenbecken -->
+    <path d="M580 120 h200 v140 h-200z" fill="#FFFCFA"/><path d="M594 134 h172 v112 h-172z" fill="#86BCD6"/>
+    <path d="M600 60 q15 -15 30 0 M650 50 q15 -15 30 0" stroke="#9AAFB5" stroke-width="3" fill="none"/>
+    <!-- Sportbecken -->
+    <rect x="160" y="330" width="480" height="140" rx="10" fill="#FFFCFA"/><rect x="174" y="344" width="452" height="112" rx="6" fill="#5FA7C9"/>
+    <g stroke="#FFFFFF" stroke-width="3" stroke-dasharray="10 8"><path d="M174 381h452M174 418h452"/></g>
+  </g>
+  <!-- Dampf -->
+  <g stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round" opacity=".9">
+    <path d="M130 80 q-12 -20 0 -40 M170 80 q12 -20 0 -40"/>
+    <path d="M380 92 q-12 -20 0 -40"/><path d="M440 92 q12 -20 0 -40"/>
+  </g>
+  <!-- Schilder -->
+  <g font-weight="bold" text-anchor="middle">
+    <rect x="80" y="15" width="140" height="56" rx="8" fill="#22302A"/>
+    <text x="150" y="38" font-size="15" fill="#F3EBDD">Whirlpool</text><text x="150" y="62" font-size="22" fill="#F2D488">40 °C</text>
+    <rect x="340" y="190" width="140" height="56" rx="8" fill="#22302A"/>
+    <text x="410" y="213" font-size="15" fill="#F3EBDD">Solebecken</text><text x="410" y="237" font-size="22" fill="#F2D488">36 °C</text>
+    <rect x="610" y="190" width="140" height="56" rx="8" fill="#22302A"/>
+    <text x="680" y="213" font-size="15" fill="#F3EBDD">Außenbecken</text><text x="680" y="237" font-size="22" fill="#F2D488">32 °C</text>
+    <rect x="330" y="290" width="140" height="56" rx="8" fill="#22302A"/>
+    <text x="400" y="313" font-size="15" fill="#F3EBDD">Sportbecken</text><text x="400" y="337" font-size="22" fill="#F2D488">28 °C</text>
+  </g>
+  <!-- Liege mit Bademantel -->
+  <g transform="translate(680 400)"><rect x="-70" y="0" width="140" height="18" rx="8" fill="#C99D74"/><path d="M40 0 l30 -40" stroke="#C99D74" stroke-width="16" stroke-linecap="round"/><rect x="-60" y="-14" width="90" height="16" rx="6" fill="#FFFCFA"/></g>
+</svg>

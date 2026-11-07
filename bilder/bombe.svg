@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="500" fill="#22302A"/>
+  <g stroke="#2E3F37" stroke-width="2"><path d="M0 100h800M0 200h800M0 300h800M0 400h800M160 0v500M320 0v500M480 0v500M640 0v500"/></g>
+  <!-- Tisch -->
+  <rect x="60" y="400" width="680" height="30" rx="6" fill="#6B4E3A"/>
+  <!-- Bombe (Pappe) -->
+  <rect x="200" y="140" width="400" height="260" rx="24" fill="#B9A58A" stroke="#8A7A64" stroke-width="5"/>
+  <rect x="230" y="170" width="340" height="80" rx="10" fill="#1E1E1E"/>
+  <!-- Zünderanzeige -->
+  <g>
+    <rect x="250" y="185" width="44" height="50" rx="6" fill="#3E6656"/>
+    <rect x="304" y="185" width="44" height="50" rx="6" fill="#3E6656"/>
+    <rect x="358" y="185" width="44" height="50" rx="6" fill="#E9B44C"/>
+    <rect x="412" y="185" width="44" height="50" rx="6" fill="#2A2A2A" stroke="#555"/>
+    <rect x="466" y="185" width="44" height="50" rx="6" fill="#2A2A2A" stroke="#555"/>
+    <!-- Totenkopf -->
+    <g transform="translate(540 210)"><circle r="16" fill="#F3EBDD"/><rect x="-9" y="10" width="18" height="10" rx="2" fill="#F3EBDD"/><circle cx="-6" cy="-2" r="4" fill="#1E1E1E"/><circle cx="6" cy="-2" r="4" fill="#1E1E1E"/></g>
+    <path d="M380 240 v18" stroke="#E9B44C" stroke-width="4"/>
+  </g>
+  <!-- Kabel -->
+  <g fill="none" stroke-width="10" stroke-linecap="round">
+    <path d="M240 290 C300 260 360 340 420 300 S540 280 560 320" stroke="#2E6FB0"/>
+    <path d="M240 320 C300 360 380 280 440 330 S530 350 560 300" stroke="#C8302C"/>
+    <path d="M240 350 C320 330 380 380 450 360 S530 330 560 360" stroke="#E9C33A"/>
+    <path d="M240 375 C300 395 420 345 560 380" stroke="#2E6FB0"/>
+  </g>
+  <g fill="#8A7A64"><rect x="225" y="280" width="20" height="110" rx="4"/><rect x="555" y="280" width="20" height="110" rx="4"/></g>
+  <!-- Kabelständer -->
+  <g transform="translate(90 330)"><rect x="-40" y="50" width="100" height="20" rx="6" fill="#4A4A4A"/>
+    <rect x="-36" y="0" width="24" height="56" rx="4" fill="#2E6FB0"/><rect x="-8" y="0" width="24" height="56" rx="4" fill="#2B3530"/><rect x="20" y="0" width="24" height="56" rx="4" fill="#2E6FB0"/></g>
+  <g transform="translate(700 330)"><rect x="-50" y="50" width="100" height="20" rx="6" fill="#4A4A4A"/>
+    <rect x="-46" y="0" width="24" height="56" rx="4" fill="#2B3530"/><rect x="-18" y="0" width="24" height="56" rx="4" fill="#C8302C"/><rect x="10" y="0" width="24" height="56" rx="4" fill="#2B3530"/></g>
+  <!-- Zange -->
+  <g transform="translate(400 90) rotate(-20)"><path d="M-60 -6 L0 0 L-60 6" stroke="#C9C9C9" stroke-width="8" fill="none"/><path d="M0 0 L50 -18 M0 0 L50 18" stroke="#C8302C" stroke-width="14" stroke-linecap="round"/><circle r="6" fill="#888"/></g>
+</svg>

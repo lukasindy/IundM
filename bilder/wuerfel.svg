@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
+<rect width="800" height="500" fill="#6B4E3A"/>
+<rect y="0" width="800" height="500" fill="#6B4E3A"/>
+<g stroke="#5E4332" stroke-width="3"><path d="M0 120h800M0 260h800M0 400h800"/></g>
+<g transform="rotate(-8 170 250)"><rect x="90" y="170" width="160" height="160" rx="26" fill="#00000033" transform="translate(8 10)"/><rect x="90" y="170" width="160" height="160" rx="26" fill="#FFFCFA" stroke="#D9CBBE" stroke-width="3"/>
+<circle cx="126" cy="206" r="15" fill="#22302A"/>
+<circle cx="214" cy="206" r="15" fill="#22302A"/>
+<circle cx="126" cy="250" r="15" fill="#22302A"/>
+<circle cx="214" cy="250" r="15" fill="#22302A"/>
+<circle cx="126" cy="294" r="15" fill="#22302A"/>
+<circle cx="214" cy="294" r="15" fill="#22302A"/>
+</g>
+<g transform="rotate(6 400 250)"><rect x="320" y="170" width="160" height="160" rx="26" fill="#00000033" transform="translate(8 10)"/><rect x="320" y="170" width="160" height="160" rx="26" fill="#FFFCFA" stroke="#D9CBBE" stroke-width="3"/>
+<circle cx="356" cy="206" r="15" fill="#22302A"/>
+<circle cx="444" cy="294" r="15" fill="#22302A"/>
+</g>
+<g transform="rotate(-3 630 250)"><rect x="550" y="170" width="160" height="160" rx="26" fill="#00000033" transform="translate(8 10)"/><rect x="550" y="170" width="160" height="160" rx="26" fill="#FFFCFA" stroke="#D9CBBE" stroke-width="3"/>
+<circle cx="586" cy="206" r="15" fill="#22302A"/>
+<circle cx="674" cy="206" r="15" fill="#22302A"/>
+<circle cx="630" cy="250" r="15" fill="#22302A"/>
+<circle cx="586" cy="294" r="15" fill="#22302A"/>
+<circle cx="674" cy="294" r="15" fill="#22302A"/>
+</g>
+</svg>

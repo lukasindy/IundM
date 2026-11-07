@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
+<rect width="800" height="500" fill="#F1E6E0"/>
+<rect x="40" y="30" width="720" height="440" fill="#8A6A4E"/>
+<rect x="60" y="50" width="680" height="400" fill="#F1E6E0"/>
+<rect x="60" y="430" width="680" height="20" fill="#6B4E3A"/>
+<rect x="80" y="386" width="110" height="44" rx="4" fill="#22302A" stroke="#00000022" stroke-width="2"/>
+<text x="135.0" y="417.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#F3EBDD">Schach</text>
+<rect x="80" y="342" width="110" height="44" rx="4" fill="#B83A30" stroke="#00000022" stroke-width="2"/>
+<text x="135.0" y="373.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#FFFFFF">Dame</text>
+<rect x="200" y="100" width="64" height="330" rx="4" fill="#3E6656" stroke="#00000022" stroke-width="2"/>
+<text x="0" y="0" transform="translate(242.0 265.0) rotate(-90)" text-anchor="middle" font-size="32" font-weight="bold" fill="#F3EBDD">Backgammon</text>
+<rect x="274" y="100" width="64" height="330" rx="4" fill="#C9A45C" stroke="#00000022" stroke-width="2"/>
+<text x="0" y="0" transform="translate(316.0 265.0) rotate(-90)" text-anchor="middle" font-size="32" font-weight="bold" fill="#22302A">Oware</text>
+<rect x="348" y="386" width="110" height="44" rx="4" fill="#7FA9C4" stroke="#00000022" stroke-width="2"/>
+<text x="403.0" y="417.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A">Halma</text>
+<rect x="468" y="100" width="64" height="330" rx="4" fill="#B83A30" stroke="#00000022" stroke-width="2"/>
+<text x="0" y="0" transform="translate(510.0 265.0) rotate(-90)" text-anchor="middle" font-size="32" font-weight="bold" fill="#FFFFFF">Mühle</text>
+<rect x="542" y="386" width="110" height="44" rx="4" fill="#F3EBDD" stroke="#00000022" stroke-width="2"/>
+<text x="597.0" y="417.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A">Go</text>
+<rect x="542" y="342" width="110" height="44" rx="4" fill="#6B4E3A" stroke="#00000022" stroke-width="2"/>
+<text x="597.0" y="373.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#F3EBDD">Schach</text>
+<rect x="662" y="100" width="64" height="330" rx="4" fill="#E8C4BD" stroke="#00000022" stroke-width="2"/>
+<text x="0" y="0" transform="translate(704.0 265.0) rotate(-90)" text-anchor="middle" font-size="32" font-weight="bold" fill="#22302A">Bingo</text>
+</svg>

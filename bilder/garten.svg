@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#EAF0EC"/>
+  <!-- Hügel / Hintergrund -->
+  <path d="M0 230 Q160 150 330 210 T800 190 V500 H0z" fill="#C9D9CF"/>
+  <!-- Kiesfläche mit Rechenmuster -->
+  <path d="M0 300 Q200 270 420 290 T800 280 V500 H0z" fill="#E9E1D4"/>
+  <g fill="none" stroke="#D6CBB9" stroke-width="3">
+    <path d="M0 330 Q200 300 420 320 T800 310"/><path d="M0 360 Q200 330 420 350 T800 340"/>
+    <path d="M0 390 Q200 360 420 380 T800 370"/><path d="M0 420 Q200 390 420 410 T800 400"/>
+    <path d="M0 450 Q200 420 420 440 T800 430"/><path d="M0 480 Q200 450 420 470 T800 460"/>
+  </g>
+  <!-- Teich -->
+  <ellipse cx="560" cy="410" rx="190" ry="60" fill="#9CC3C0"/>
+  <ellipse cx="560" cy="410" rx="190" ry="60" fill="none" stroke="#7BA6A2" stroke-width="4"/>
+  <g>
+    <path d="M480 405 q20 -14 44 0 q-24 12 -44 0z" fill="#E36F4E"/><path d="M480 405 l-12 -7 v14z" fill="#E36F4E"/>
+    <path d="M600 420 q20 -14 44 0 q-24 12 -44 0z" fill="#FFFCFA"/><circle cx="625" cy="417" r="5" fill="#E36F4E"/><path d="M644 420 l12 -7 v14z" fill="#FFFCFA"/>
+    <path d="M560 385 q16 -11 34 0 q-18 10 -34 0z" fill="#E9B44C"/><path d="M560 385 l-10 -6 v12z" fill="#E9B44C"/>
+  </g>
+  <!-- Steine & Moos -->
+  <ellipse cx="200" cy="400" rx="60" ry="30" fill="#9AA39A"/><ellipse cx="190" cy="388" rx="40" ry="14" fill="#7E9C70"/>
+  <ellipse cx="290" cy="440" rx="34" ry="18" fill="#A9B0A8"/>
+  <!-- Ahorn / Kirschbaum -->
+  <path d="M700 300 C690 230 700 170 720 120" stroke="#6B4E3A" stroke-width="14" fill="none"/>
+  <path d="M715 160 C680 140 650 140 620 150" stroke="#6B4E3A" stroke-width="7" fill="none"/>
+  <g fill="#EFB9C2"><circle cx="720" cy="100" r="50"/><circle cx="660" cy="125" r="40"/><circle cx="760" cy="140" r="38"/><circle cx="610" cy="140" r="28"/></g>
+  <g fill="#F7D3D9"><circle cx="700" cy="85" r="20"/><circle cx="650" cy="115" r="14"/><circle cx="755" cy="130" r="14"/></g>
+  <!-- Steinlaterne -->
+  <g>
+    <rect x="370" y="320" width="80" height="20" fill="#8E928C"/>
+    <rect x="395" y="250" width="30" height="70" fill="#A2A69F"/>
+    <rect x="365" y="235" width="90" height="18" fill="#8E928C"/>
+    <rect x="380" y="185" width="60" height="50" fill="#A2A69F"/>
+    <rect x="395" y="198" width="30" height="26" fill="#F2D488"/>
+    <path d="M350 188 L410 150 L470 188z" fill="#8E928C"/>
+    <circle cx="410" cy="146" r="8" fill="#8E928C"/>
+    <!-- Vorhängeschloss -->
+    <path d="M420 262 a9 9 0 0 1 18 0 v8" fill="none" stroke="#6B6F69" stroke-width="3"/>
+    <rect x="414" y="268" width="30" height="22" rx="3" fill="#C9A45C"/>
+  </g>
+  <!-- Wunschtäfelchen -->
+  <path d="M220 230 H340" stroke="#6B4E3A" stroke-width="4"/>
+  <path d="M225 200 V320 M335 200 V320" stroke="#6B4E3A" stroke-width="6"/>
+  <g fill="#D9B48A" stroke="#A9825B" stroke-width="2">
+    <path d="M232 238 h22 v26 h-22z"/><path d="M258 238 h22 v26 h-22z"/><path d="M284 238 h22 v26 h-22z"/><path d="M310 238 h22 v26 h-22z"/>
+  </g>
+  <!-- Torii klein im Hintergrund -->
+  <g fill="#C8513F">
+    <rect x="70" y="150" width="140" height="12"/><rect x="80" y="172" width="120" height="8"/>
+    <rect x="95" y="150" width="10" height="110"/><rect x="175" y="150" width="10" height="110"/>
+  </g>
+  <path d="M62 150 Q140 138 218 150" stroke="#22302A" stroke-width="5" fill="none"/>
+</svg>
