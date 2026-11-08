@@ -34,6 +34,8 @@ Wenn du ein Bild austauschst, passe die Lösung an.
 
 Dateien kannst du direkt auf GitHub ändern: Datei anklicken → Stift-Symbol → **Commit changes**. Nach ca. einer Minute ist die neue Version online.
 
+**Neue Version an die Handys melden:** In `version.json` die Zahl um eins erhöhen (z. B. `"11"` → `"12"`). Wer die App offen hat, sieht dann oben „Neue Version verfügbar – Aktualisieren“. Auf der Startseite gibt es außerdem den Knopf „Neueste Version laden“. Der Spielstand bleibt dabei erhalten.
+
 ## Dateien
 
 | Datei | Wofür |

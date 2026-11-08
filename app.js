@@ -150,9 +150,12 @@
           '<p class="muted" style="text-align:center">Wirklich den ganzen Fortschritt löschen?</p>' +
           '<button class="btn secondary" id="reset-ja">Ja, alles löschen</button>' +
         '</div>' +
+        '<div class="start-tools">' +
+        '<button class="test-toggle" id="neu-laden"><span class="test-dot neu"></span>Neueste Version laden</button>' +
         '<button class="test-toggle' + (testmodus ? " an" : "") + '" id="testmodus" aria-pressed="' + testmodus + '">' +
           '<span class="test-dot"></span>Testmodus: ' + (testmodus ? "an – alle Räume offen, Lösungen sichtbar" : "aus") +
         '</button>' +
+        '</div>' +
       '</div>';
     on("#los", function () {
       if (!stand.start) { stand.start = Date.now(); speichern(); }
@@ -161,6 +164,7 @@
     on("#reset", function () { document.getElementById("reset-frage").hidden = false; this.hidden = true; });
     on("#reset-ja", function () { stand = leererStand(); speichern(); zeichnen(); });
     on("#testmodus", function () { setzeTestmodus(!testmodus); zeichnen(); });
+    on("#neu-laden", function () { this.lastChild.textContent = "Lädt …"; aktualisieren(); });
   }
   function titelSchoen(t) {
     // "Iris & Michi" -> Et-Zeichen kursiv und farbig; sonst das letzte Wort kursiv in eigener Zeile
@@ -544,6 +548,49 @@
   ["gesturestart", "gesturechange"].forEach(function (t) {
     document.addEventListener(t, function (e) { e.preventDefault(); }, { passive: false });
   });
+
+  // ---------- Aktualisieren (Spielstand bleibt erhalten) ----------
+  var geladeneVersion = null;
+  function holeVersion() {
+    return fetch("version.json?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { return j && j.version; })
+      .catch(function () { return null; });
+  }
+  function aktualisieren() {
+    var schritte = [];
+    try {
+      if (navigator.serviceWorker) schritte.push(navigator.serviceWorker.getRegistrations().then(function (rs) {
+        return Promise.all(rs.map(function (r) { return r.update().catch(function () {}); }));
+      }));
+      if (window.caches) schritte.push(caches.keys().then(function (ks) {
+        return Promise.all(ks.map(function (k) { return caches.delete(k); }));
+      }));
+    } catch (e) {}
+    Promise.all(schritte).catch(function () {}).then(function () {
+      location.replace(location.pathname + "?v=" + Date.now());
+    });
+  }
+  function zeigeUpdateBanner() {
+    if (document.getElementById("update-banner")) return;
+    var b = document.createElement("div");
+    b.id = "update-banner"; b.className = "update-banner"; b.setAttribute("role", "status");
+    b.innerHTML = '<span>Neue Version verfügbar</span><button id="update-jetzt">Aktualisieren</button>';
+    document.body.appendChild(b);
+    document.getElementById("update-jetzt").addEventListener("click", function () { this.textContent = "Lädt …"; aktualisieren(); });
+  }
+  function pruefeUpdate() {
+    holeVersion().then(function (v) {
+      if (!v) return;
+      if (geladeneVersion === null) { geladeneVersion = v; return; }
+      if (v !== geladeneVersion) zeigeUpdateBanner();
+    });
+  }
+  pruefeUpdate();
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) pruefeUpdate(); });
+  setInterval(function () { if (!document.hidden) pruefeUpdate(); }, 5 * 60 * 1000);
+  // Saubere Adresse nach dem Neuladen (ohne ?v=…)
+  if (/[?&]v=/.test(location.search)) { try { history.replaceState(history.state, "", location.pathname); } catch (e) {} }
 
   // Offline-Unterstützung (nur auf GitHub Pages / https)
   if ("serviceWorker" in navigator && location.protocol === "https:" && !/claude/.test(location.hostname)) {

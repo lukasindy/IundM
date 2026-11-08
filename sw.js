@@ -1,7 +1,7 @@
 /* Offline-Cache. Lädt immer zuerst die neueste Version aus dem Netz,
    und fällt nur ohne Internet auf die gespeicherte Kopie zurück.
    So erscheinen Änderungen an den Rätseln sofort. */
-const CACHE = "i-und-m-v10";
+const CACHE = "i-und-m-v11";
 const DATEIEN = [
   "./", "index.html", "style.css", "app.js", "raetsel.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
@@ -43,6 +43,7 @@ self.addEventListener("activate", (e) => {
 
 self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET") return;
+  if (new URL(e.request.url).pathname.endsWith("version.json")) return;
   e.respondWith(
     fetch(e.request)
       .then((antwort) => {
