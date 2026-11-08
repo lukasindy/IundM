@@ -31,8 +31,8 @@ window.SPIEL = {
   startBild: "bilder/titel.svg",
   startText: [
     "Liebe Iris, lieber Michi – herzlichen Glückwunsch zu eurer kirchlichen Hochzeit!",
-    "Sophie und Lukas haben euch ein ganz besonderes Geschenk besorgt und es mit einem Zahlenschloss gesichert. Den Code hat Lukas gut versteckt – in einer Reihe von Rätseln, die nur ihr zwei lösen könnt. Wohin sie euch führen, verraten wir noch nicht.",
-    "Das Problem: Lukas weiß die Lösungen selbst nicht mehr. Und Sophie hat ihm »ehrlich gesagt nicht so ganz zugehört« – ein bisschen helfen kann sie euch aber trotzdem. Lukas’ Notizen und ein paar Kommentare von Bernhard, eurem zweiten Trauzeugen, haben sie euch hinterlassen. Den Rest müsst ihr selbst knacken.",
+    "Sophie und Lukas haben euch ein ganz besonderes Geschenk besorgt und es mit einem Zahlenschloss gesichert. Dann haben beide den Code verlegt. Zum Glück hat Lukas ihn vorher in einer Reihe von Rätseln versteckt, die nur ihr zwei lösen könnt. Wohin sie euch führen, verraten wir noch nicht.",
+    "Das Problem: Lukas weiß die Lösungen selbst nicht mehr. Ein bisschen helfen kann Sophie euch aber. Lukas’ Notizen und ein paar Kommentare von Bernhard, eurem zweiten Trauzeugen, haben sie euch hinterlassen. Den Rest müsst ihr selbst knacken.",
     "Unterwegs findet ihr vier Ziffern. Mit allen vier öffnet ihr euer Geschenk. Viel Glück!"
   ],
 
