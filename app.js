@@ -34,7 +34,7 @@
 
   function istGeloest(r) { return !!stand.geloest[r.id]; }
   function raumFertig(raum) { return raum.raetsel.every(istGeloest); }
-  function raumOffen(i) { return i === 0 || raumFertig(SPIEL.raeume[i - 1]); }
+  function raumOffen(i) { return testmodus || i === 0 || raumFertig(SPIEL.raeume[i - 1]); }
   function naechstesIndex(raum) {
     for (var j = 0; j < raum.raetsel.length; j++) if (!istGeloest(raum.raetsel[j])) return j;
     return -1;
@@ -131,7 +131,7 @@
           '<button class="btn secondary" id="reset-ja">Ja, alles löschen</button>' +
         '</div>' +
         '<button class="test-toggle' + (testmodus ? " an" : "") + '" id="testmodus" aria-pressed="' + testmodus + '">' +
-          '<span class="test-dot"></span>Testmodus: ' + (testmodus ? "an – Lösungen werden angezeigt" : "aus") +
+          '<span class="test-dot"></span>Testmodus: ' + (testmodus ? "an – alle Räume offen, Lösungen sichtbar" : "aus") +
         '</button>' +
       '</div>';
     on("#los", function () {
@@ -162,11 +162,13 @@
       var offen = raumOffen(i);
       var fertig = raumFertig(raum);
       var n = raum.raetsel.filter(istGeloest).length;
+      var siegel = '<span class="room-seal" aria-hidden="true"><svg viewBox="0 0 40 40"><path class="bg" d="M13 18v-4a7 7 0 0 1 14 0v4"/><rect x="9" y="18" width="22" height="16" rx="3"/><circle class="kh" cx="20" cy="26" r="2.5"/></svg></span>';
       html += '<button class="room' + (offen ? "" : " locked") + '" data-raum="' + i + '"' + (offen ? "" : ' aria-disabled="true"') + '>' +
-        '<img src="' + esc(raum.bild) + '" alt="">' +
-        '<span class="room-text">' + (raum.thema ? '<span class="room-theme">' + esc(raum.thema) + '</span>' : '') + '<strong>' + esc(raum.name) + '</strong><span>' +
-          (offen ? esc(raum.kurz) : "Noch verschlossen") + '</span></span>' +
-        '<span class="badge' + (fertig ? " done" : "") + '">' + (fertig ? "Geschafft" : offen ? n + " / " + raum.raetsel.length : "Zu") + '</span>' +
+        (offen ? '<img src="' + esc(raum.bild) + '" alt="">' : siegel) +
+        '<span class="room-text">' + (raum.thema ? '<span class="room-theme">' + esc(raum.thema) + '</span>' : '') +
+          '<strong>' + (offen ? esc(raum.name) : "Geheimer Raum") + '</strong><span>' +
+          (offen ? esc(raum.kurz) : "Wartet auf euch") + '</span></span>' +
+        '<span class="badge' + (fertig ? " done" : offen ? "" : " sealed") + '">' + (fertig ? "Geschafft" : offen ? n + " / " + raum.raetsel.length : "Versiegelt") + '</span>' +
       '</button>';
     });
     html += '</div>';

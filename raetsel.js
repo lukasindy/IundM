@@ -31,74 +31,67 @@ window.SPIEL = {
   startBild: "bilder/titel.svg",
   startText: [
     "Heute heiraten Iris & Michi. Ihr seid die Trauzeugen – und habt nur eine einzige Aufgabe: auf die Ringe aufpassen.",
-    "Leider hat Onkel Ferdi sie versteckt. Das macht er bei jeder Familienhochzeit. Diesmal hat er das ganze Hotel in eine Rätselreise verwandelt: acht Zimmer, jedes erinnert an etwas, das Iris & Michi lieben – Japan, das Casino, die Therme und ihre Spieleabende.",
+    "Leider hat Onkel Ferdi sie versteckt. Das macht er bei jeder Familienhochzeit. Diesmal hat er das ganze Hotel in eine Rätselreise verwandelt: zehn Zimmer, jedes erinnert an etwas, das Iris & Michi lieben – Japan, das Casino, die Therme und ihre Spieleabende.",
     "Findet die Ringe, bevor die Trauung beginnt."
   ],
 
   raeume: [
     // ======================= JAPAN =======================
     {
-      id: "garten",
+      id: "samurai",
       thema: "Japan",
-      name: "Der Zen-Garten",
-      kurz: "Steine, Moos und Koi",
-      bild: "bilder/garten.svg",
+      name: "Das Samurai-Dojo",
+      kurz: "Ehre, Klinge, Disziplin",
+      bild: "bilder/samurai.svg",
       intro: [
-        "Hinter dem Hotel liegt ein kleiner japanischer Garten: geharkter Kies, ein Teich mit Koi und eine steinerne Laterne.",
-        "An der Laterne baumelt ein Vorhängeschloss mit vier Rädchen. Daneben hängen hölzerne Wunschtäfelchen – und ein Zettel von Ferdi."
+        "Ferdi hat den Fitnessraum des Hotels in ein Dojo verwandelt: Tatami-Matten, eine Rüstung in der Ecke und an der Wand ein großes Banner.",
+        "Vor einem verschlossenen Waffenschrank liegt ein Holzbrett mit vier leeren Sitzkissen, nummeriert von 1 bis 4 – von links nach rechts. Die vier Samurai-Figuren, die dort saßen, hat Ferdi weggeräumt. Nur sein Zettel ist geblieben."
       ],
       raetsel: [
         {
-          id: "garten-1",
-          titel: "Die Wunschtäfelchen",
+          id: "samurai-1",
+          titel: "Die vier Samurai",
           typ: "schloss",
-          tafeln: ["五", "一", "八", "三"],
           text: [
-            "»Auf meinen Täfelchen stehen japanische Zahlen. Auf der Schriftrolle findet ihr, was sie bedeuten:",
-            "一 1 · 二 2 · 三 3 · 四 4 · 五 5 · 六 6 · 七 7 · 八 8 · 九 9 · 十 10",
-            "Aber Achtung: Ich lese heute wie ein alter Japaner – von rechts nach links.«"
+            "»Vier Samurai saßen hier: Kenji, Hiro, Taro und Yuki. Jeder trug ein Wappen (rot, blau, grün oder weiß) und eine Waffe (Katana, Bogen, Naginata oder Speer).",
+            "1. Der Bogenschütze saß direkt rechts neben Hiro.",
+            "2. Yuki saß ganz außen und trug kein Katana.",
+            "3. Das rote Wappen gehörte dem Samurai mit der Naginata.",
+            "4. Taro saß irgendwo links vom weißen Wappen.",
+            "5. Der Speerträger hatte ein blaues Wappen und saß direkt neben dem roten Wappen.",
+            "6. Kenji trug das Katana.",
+            "7. Das grüne Wappen lag auf Platz 1.",
+            "8. Taro hat nie einen Speer angefasst.",
+            "Der Code für den Waffenschrank: die Platznummer von Kenji, dann von Hiro, dann von Taro, dann von Yuki.«"
           ],
-          frage: "Öffnet das Schloss an der Laterne.",
-          loesung: "3815",
+          frage: "Öffnet den Waffenschrank.",
+          loesung: "1324",
           tipps: [
-            "Auf Ferdis Zettel steht, welches Zeichen für welche Zahl steht.",
-            "Übersetzt jedes Täfelchen einzeln – ein Strich ist zum Beispiel die 1.",
-            "Habt ihr vier Zahlen? Denkt daran, wie Ferdi heute liest – das Täfelchen ganz rechts kommt zuerst."
+            "Zeichnet euch eine Tabelle mit vier Plätzen und tragt ein, was sicher ist. Hinweis 7 ist ein guter Anfang.",
+            "Kenji hat das Katana, also kann er nicht der Speerträger mit dem blauen Wappen sein. Und wo kann Yuki überhaupt sitzen, wenn Platz 1 schon ein bestimmtes Wappen hat?",
+            "Der Bogenschütze sitzt rechts neben Hiro – Hiro kann also nicht auf Platz 4 sitzen. Probiert aus, wo Hiro sitzen kann, ohne dass ein anderer Hinweis bricht."
           ],
-          erfolg: "Das Schloss springt auf. In der Laterne liegen drei zusammengerollte Gedichte."
+          erfolg: "Klack – der Waffenschrank öffnet sich. Darin liegt ein Katana. In die Klinge sind seltsame Buchstaben graviert."
         },
         {
-          id: "garten-2",
-          titel: "Die drei Haikus",
-          typ: "auswahl",
+          id: "samurai-2",
+          titel: "Die Gravur",
+          typ: "text",
+          bild: "bilder/bushido.svg",
+          bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Ein Haiku hat drei Zeilen: 5 Silben, 7 Silben, 5 Silben. Nur eines meiner Gedichte hält sich daran – dort steckt der nächste Hinweis.«"
+            "Auf der Klinge steht: ALLOHBZ",
+            "Daneben hat Ferdi geschrieben: »Jede Tugend auf meinem Banner hat jeden Buchstaben um einen Schritt im Alphabet nach vorne geschoben. Schiebt sie zurück, dann wisst ihr, wohin ihr müsst.«"
           ],
-          gedicht: [
-            "# Haiku 1",
-            "Der Teich ist ganz still,",
-            "ein Koi schwimmt unter der Brücke,",
-            "das Wasser glänzt.",
-            "",
-            "# Haiku 2",
-            "Kirschblüten im Wind,",
-            "zwei Ringe schlafen im Moos,",
-            "wer sucht, der findet.",
-            "",
-            "# Haiku 3",
-            "Laternen leuchten hell,",
-            "der Garten schläft schon lange,",
-            "Ferdi lacht leise."
-          ],
-          frage: "Welches Haiku folgt der Regel 5 – 7 – 5?",
-          optionen: ["Haiku 1", "Haiku 2", "Haiku 3"],
-          loesung: "Haiku 2",
+          frage: "Was steht wirklich auf der Klinge?",
+          platzhalter: "Wort eintippen",
+          loesung: ["teehaus", "das teehaus", "ins teehaus"],
           tipps: [
-            "Zählt die Silben jeder Zeile, am besten durch Mitklatschen.",
-            "Ein Haiku braucht genau 5 – 7 – 5. Eine einzige Zeile mit einer Silbe zu viel oder zu wenig, und es scheidet aus.",
-            "Achtet besonders auf die zweite Zeile von Haiku 1 und die erste Zeile von Haiku 3."
+            "Zählt zuerst die Tugenden auf dem Banner.",
+            "Jeder Buchstabe wurde so oft nach vorne verschoben, wie es Tugenden gibt. Geht im Alphabet genauso viele Schritte zurück – nach A kommt rückwärts wieder Z.",
+            "Fangt mit dem ersten Buchstaben an: Von A aus zählt ihr rückwärts Z, Y, X …"
           ],
-          erfolg: "Unter dem Moos neben der Laterne liegt ein Schlüssel mit einem Anhänger: »Teehaus«."
+          erfolg: "Das Teehaus! Ihr steckt das Katana zurück und geht leise hinüber."
         }
       ]
     },
@@ -106,7 +99,6 @@ window.SPIEL = {
       id: "teehaus",
       thema: "Japan",
       name: "Das Teehaus",
-      ziffer: { thema: "Japan", wert: "7" },
       kurz: "Matcha und Glücksbringer",
       bild: "bilder/teehaus.svg",
       intro: [
@@ -157,7 +149,114 @@ window.SPIEL = {
             "»Grün« steht für das Matcha-Pulver, »nass« für das Aufgießen.",
             "Ordnet jede Karte einem Wort aus dem Merkspruch zu – dann ergibt sich die Reihenfolge von selbst."
           ],
-          erfolg: "Auf dem Boden der Teeschale klebt ein Spielchip: »Roulette – 1. Stock«."
+          erfolg: "Auf dem Boden der Teeschale steht mit Pinsel geschrieben: »Sushi-Bar, Erdgeschoss«."
+        }
+      ]
+    },
+
+    {
+      id: "sushi",
+      thema: "Japan",
+      name: "Die Sushi-Bar",
+      kurz: "Alles läuft im Kreis",
+      bild: "bilder/sushi.svg",
+      intro: [
+        "In der Sushi-Bar dreht sich ein Förderband mit bunten Tellern im Kreis. Der Koch nickt euch zu und schiebt euch einen zerknitterten Kassenbon hin.",
+        "»Der Herr Ferdi war schon da«, sagt er. »Er hat gesagt, ihr wisst dann schon.«"
+      ],
+      raetsel: [
+        {
+          id: "sushi-1",
+          titel: "Ferdis Rechnung",
+          typ: "schloss",
+          bild: "bilder/teller.svg",
+          bildText: "Tippe aufs Bild, um es zu vergrößern.",
+          text: [
+            "»Ich habe genau 10 Teller gegessen und dafür 37 Euro bezahlt.",
+            "Von jeder Farbe war mindestens ein Teller dabei.",
+            "Ich hatte mehr blaue als grüne Teller – und genau doppelt so viele rote wie goldene.",
+            "Der Code für die Kasse: wie viele grüne, blaue, rote und goldene Teller ich hatte – genau in dieser Reihenfolge.«"
+          ],
+          frage: "Öffnet die Kasse.",
+          loesung: "1621",
+          tipps: [
+            "Schaut auf der Preistafel nach, was jede Farbe kostet. Ihr braucht zwei Gleichungen: eine für die Anzahl der Teller, eine für den Preis.",
+            "Rote und goldene Teller kommen immer im Paket: Zu jedem goldenen gehören zwei rote. Rechnet aus, was so ein Paket an Tellern und Euro kostet.",
+            "Probiert erst aus, wie viele goldene Teller es höchstens sein können. Dann bleibt für Grün und Blau nicht mehr viel Spielraum."
+          ],
+          erfolg: "Die Kasse springt auf. Darin liegt ein Zettel: »Schaut aufs Band – da fehlen zwei Teller.«"
+        },
+        {
+          id: "sushi-2",
+          titel: "Das Förderband",
+          typ: "schloss",
+          bild: "bilder/foerderband.svg",
+          bildText: "Tippe aufs Bild, um es zu vergrößern.",
+          text: [
+            "Auf jedem Teller am Förderband klebt eine Nummer. Ferdi schreibt:",
+            "»Meine Teller folgen einer Regel. Zwei habe ich gegessen – ihre Nummern, von links nach rechts, öffnen die Box des Kochs.«"
+          ],
+          frage: "Welche Nummern hatten die fehlenden Teller?",
+          loesung: "2947",
+          tipps: [
+            "Schaut nicht nur, wie groß die Abstände zwischen den Nummern sind, sondern wie jede Nummer aus den vorherigen entsteht.",
+            "Nehmt zwei Teller, die direkt nebeneinander stehen. Was haben sie mit dem Teller rechts daneben zu tun?",
+            "Prüft eure Regel am Ende: Die beiden fehlenden Nummern müssen zusammen genau die letzte Nummer ergeben."
+          ],
+          erfolg: "Die Box öffnet sich. Darin liegt ein Holzschild mit dem Zeichen ♨ und einem Pfeil: »Onsen – hinter dem Hotel«."
+        }
+      ]
+    },
+
+    {
+      id: "onsen",
+      thema: "Japan",
+      name: "Das Onsen",
+      kurz: "Heiße Quellen unter freiem Himmel",
+      ziffer: { thema: "Japan", wert: "7" },
+      bild: "bilder/onsen.svg",
+      intro: [
+        "Hinter dem Hotel dampft ein Onsen zwischen Felsen und Bambus. Aus einem Rohr sprudelt heißes Quellwasser, daneben plätschert ein kalter Bergbach.",
+        "Ein Holzkasten am Beckenrand ist mit einem Zahlenschloss gesichert. Natürlich hängt ein Zettel daran."
+      ],
+      raetsel: [
+        {
+          id: "onsen-1",
+          titel: "Das perfekte Bad",
+          typ: "schloss",
+          bild: "bilder/quellen.svg",
+          bildText: "Tippe aufs Bild, um es zu vergrößern.",
+          text: [
+            "»Das Becken fasst genau 15 Eimer Wasser. Ich fülle es nur mit Wasser aus der heißen Quelle und aus dem kalten Bach – die Temperaturen stehen auf den Schildern.",
+            "Mein perfektes Bad hat genau 48 Grad. Ja, ich mag es heiß.",
+            "Der Code: wie viele Eimer heißes Wasser, dann wie viele Eimer kaltes Wasser.«"
+          ],
+          frage: "Öffnet den Holzkasten.",
+          loesung: "78",
+          tipps: [
+            "Wenn man Wasser mischt, ist die Temperatur am Ende der Durchschnitt aller Eimer.",
+            "Rechnet aus, wie viel »Wärme« 15 Eimer mit 48 Grad zusammen haben – und wie viel jeder heiße und jeder kalte Eimer beiträgt.",
+            "Jeder heiße Eimer, den ihr gegen einen kalten tauscht, macht das ganze Becken ein Stück wärmer. Um wie viel genau?"
+          ],
+          erfolg: "Im Holzkasten liegt ein Fernglas und Ferdis nächster Zettel: »Schaut mal, wer da badet.«"
+        },
+        {
+          id: "onsen-2",
+          titel: "Die Schneeaffen",
+          typ: "schloss",
+          text: [
+            "Im Nebel über dem Becken erkennt ihr Badegäste – und ein paar Schneeaffen, die sich dazugesetzt haben.",
+            "»Ich habe von meinem Platz aus 14 Köpfe und 40 Beine gezählt. Jeder Affe hat vier Beine, jeder Mensch zwei.",
+            "Der Code für das Tor zum Garten: zuerst die Zahl der Affen, dann die Zahl der Menschen.«"
+          ],
+          frage: "Öffnet das Gartentor.",
+          loesung: "68",
+          tipps: [
+            "Jeder Kopf gehört entweder zu einem Affen oder zu einem Menschen.",
+            "Stellt euch vor, alle 14 wären Menschen. Wie viele Beine wären das – und wie viele fehlen dann noch?",
+            "Jeder Affe bringt im Vergleich zu einem Menschen zwei Beine mehr mit."
+          ],
+          erfolg: "Das Tor öffnet sich. Ein Affe drückt euch einen Spielchip in die Hand: »Roulette – 1. Stock«."
         }
       ]
     },

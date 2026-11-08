@@ -1,24 +1,30 @@
 /* Offline-Cache. Lädt immer zuerst die neueste Version aus dem Netz,
    und fällt nur ohne Internet auf die gespeicherte Kopie zurück.
    So erscheinen Änderungen an den Rätseln sofort. */
-const CACHE = "i-und-m-v4";
+const CACHE = "i-und-m-v5";
 const DATEIEN = [
   "./", "index.html", "style.css", "app.js", "raetsel.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
   "bilder/aufguss.svg",
   "bilder/automat.svg",
   "bilder/bombe.svg",
-  "bilder/garten.svg",
-  "bilder/kaestchen.svg",
+  "bilder/bushido.svg",
+  "bilder/foerderband.svg",
   "bilder/jetons.svg",
   "bilder/kabel1.svg",
   "bilder/kabel2.svg",
+  "bilder/kaestchen.svg",
+  "bilder/onsen.svg",
   "bilder/poker.svg",
+  "bilder/quellen.svg",
   "bilder/regal.svg",
   "bilder/roulette.svg",
+  "bilder/samurai.svg",
   "bilder/sauna.svg",
   "bilder/spinde.svg",
+  "bilder/sushi.svg",
   "bilder/teehaus.svg",
+  "bilder/teller.svg",
   "bilder/therme.svg",
   "bilder/titel.svg",
   "bilder/wuerfel.svg"

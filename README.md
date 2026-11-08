@@ -4,16 +4,16 @@ Ein Hochzeits-Escape-Room fürs Handy. Onkel Ferdi hat die Ringe versteckt, und 
 
 | Thema | Räume | Ziffer |
 |---|---|---|
-| Japan | Der Zen-Garten, Das Teehaus | 7 |
+| Japan | Das Samurai-Dojo, Das Teehaus, Die Sushi-Bar, Das Onsen | 7 |
 | Casino | Der Roulettesaal, Der Pokertisch | 3 |
 | Therme & Sauna | Die Therme, Die Sauna | 9 |
 | Brettspiele | Das Spielezimmer, Die Bombe (Bomb Busters) | 2 |
 
 Nach jedem Thema gibt es eine Ziffer. Am Ende zeigt die App alle vier in der richtigen Reihenfolge – das ist der Code für euer **echtes Zahlenschloss** (aktuell `7392`).
 
-16 Rätsel, je 3 Tipps (die nur in die richtige Richtung deuten), Spielstand wird am Handy gespeichert.
+20 Rätsel, je 3 Tipps (die nur in die richtige Richtung deuten), Spielstand wird am Handy gespeichert.
 
-**Testmodus:** Auf der Startseite unten „Testmodus“ antippen – dann steht bei jedem Rätsel die Lösung dabei. Vor dem echten Spiel wieder ausschalten! Läuft auf **iOS und Android**, gehostet über **GitHub Pages**.
+**Testmodus:** Auf der Startseite unten „Testmodus“ antippen – dann sind alle Räume offen und bei jedem Rätsel steht die Lösung dabei. Vor dem echten Spiel wieder ausschalten! Läuft auf **iOS und Android**, gehostet über **GitHub Pages**.
 
 ## Online
 
