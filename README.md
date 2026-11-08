@@ -1,24 +1,23 @@
-# Iris & Michi – Die verschwundenen Ringe
+# Iris & Michi – Der vergessene Code
 
-Ein Hochzeits-Escape-Room fürs Handy. Onkel Ferdi hat die Ringe versteckt, und seine Spur führt durch vier Themenwelten:
+Ein Escape Room fürs Handy als Hochzeitsgeschenk. Sophie und Lukas haben ihr Geschenk für Iris & Michi mit einem Zahlenschloss gesichert – und den Code in einer Rätselreise durch vier Themenwelten versteckt. Die Trauzeugen Sophie und Bernhard tauchen mit Notizen auf.
 
-| Thema | Räume | Ziffer |
+| Thema | Level | Ziffer |
 |---|---|---|
 | Japan | Das Samurai-Dojo, Das Teehaus, Die Sushi-Bar, Das Onsen | 7 |
 | Casino | Der Roulettesaal, Der Pokertisch | 3 |
-| Therme & Sauna | Die Therme, Die Sauna | 9 |
+| Therme | Die Therme, Die Sauna | 9 |
 | Brettspiele | Das Spielezimmer, Die Bombe (Bomb Busters) | 2 |
 
-Nach jedem Thema gibt es eine Ziffer. Am Ende zeigt die App alle vier in der richtigen Reihenfolge – das ist der Code für euer **echtes Zahlenschloss** (aktuell `7392`).
+Ein Thema öffnet sich erst, wenn das vorherige geschafft ist. Nach jedem Thema gibt es eine Ziffer. Am Ende zeigt die App alle vier in der richtigen Reihenfolge – das ist der Code für das **echte Zahlenschloss** am Geschenk (aktuell `7392`).
 
-20 Rätsel, je 3 Tipps (die nur in die richtige Richtung deuten), Spielstand wird am Handy gespeichert.
+20 Rätsel mit je 3 Tipps, die nur in die richtige Richtung deuten. Alle Rätsel haben genau eine Lösung (nachgerechnet). Der Spielstand wird am Handy gespeichert.
 
-**Testmodus:** Auf der Startseite unten „Testmodus“ antippen – dann sind alle Räume offen und bei jedem Rätsel steht die Lösung dabei. Vor dem echten Spiel wieder ausschalten! Läuft auf **iOS und Android**, gehostet über **GitHub Pages**.
+**Testmodus:** Auf der Startseite unten „Testmodus“ antippen – dann sind alle Räume offen und bei jedem Rätsel steht die Lösung dabei. Vor dem echten Spiel wieder ausschalten!
 
 ## Online
 
-Die Seite liegt unter `https://<dein-github-name>.github.io/IundM/`
-(GitHub → Repository **IundM** → **Settings → Pages**: Branch `main`, Ordner `/ (root)`).
+`https://lukasindy.github.io/IundM/`
 
 ## Auf dem Handy wie eine App installieren
 
@@ -27,10 +26,10 @@ Die Seite liegt unter `https://<dein-github-name>.github.io/IundM/`
 
 ## Rätsel anpassen
 
-Alles Inhaltliche steht in **`raetsel.js`**: Texte, Lösungen, Tipps und die vier Ziffern.
+Alles Inhaltliche steht in **`raetsel.js`**: Story, Texte, Lösungen, Tipps und die vier Ziffern.
 **Wichtig:** Trag bei `ziffer: { … wert: "7" }` die Ziffern eures echten Schlosses ein (Reihenfolge: Japan, Casino, Therme, Brettspiele).
 
-Bei Bild-Rätseln steckt die Lösung im Bild (Jetons, Spinde, Würfel, Spieleregal, Kabelständer …).
+Bei Bild-Rätseln steckt die Lösung im Bild (Jetons, Spinde, Würfelturm, Spieleregal, Kabelständer …).
 Wenn du ein Bild austauschst, passe die Lösung an.
 
 Dateien kannst du direkt auf GitHub ändern: Datei anklicken → Stift-Symbol → **Commit changes**. Nach ca. einer Minute ist die neue Version online.

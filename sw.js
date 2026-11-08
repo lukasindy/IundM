@@ -1,7 +1,7 @@
 /* Offline-Cache. Lädt immer zuerst die neueste Version aus dem Netz,
    und fällt nur ohne Internet auf die gespeicherte Kopie zurück.
    So erscheinen Änderungen an den Rätseln sofort. */
-const CACHE = "i-und-m-v6";
+const CACHE = "i-und-m-v7";
 const DATEIEN = [
   "./", "index.html", "style.css", "app.js", "raetsel.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",

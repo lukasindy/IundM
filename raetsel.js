@@ -22,17 +22,18 @@
                  Code für euer ECHTES Zahlenschloss. Trag hier die Ziffern eures Schlosses ein!
 
   Wichtig: Wenn du ein Rätsel änderst, prüf, dass Bild, Text und Lösung noch
-  zusammenpassen!
+  zusammenpassen! Alle Rätsel hier haben genau eine Lösung (nachgerechnet).
 */
 
 window.SPIEL = {
   titel: "Iris & Michi",
-  untertitel: "Die verschwundenen Ringe",
+  untertitel: "Der vergessene Code",
   startBild: "bilder/titel.svg",
   startText: [
-    "Heute heiraten Iris & Michi. Ihr seid die Trauzeugen – und habt nur eine einzige Aufgabe: auf die Ringe aufpassen.",
-    "Leider hat Onkel Ferdi sie versteckt. Das macht er bei jeder Familienhochzeit. Diesmal hat er das ganze Hotel in eine Rätselreise verwandelt: zehn Zimmer, jedes erinnert an etwas, das Iris & Michi lieben – Japan, das Casino, die Therme und ihre Spieleabende.",
-    "Findet die Ringe, bevor die Trauung beginnt."
+    "Liebe Iris, lieber Michi – herzlichen Glückwunsch zur Hochzeit!",
+    "Sophie und Lukas haben euch ein ganz besonderes Geschenk besorgt und es mit einem Zahlenschloss gesichert. Damit es niemand vorher öffnet, hat Lukas den Code in einer Rätselreise versteckt – quer durch alles, was ihr liebt: Japan, das Casino, die Therme und eure Spieleabende.",
+    "Das Problem: Lukas weiß die Lösungen selbst nicht mehr. Und Sophie meint, sie hätte ihm »sowieso nie richtig zugehört«. Eure Trauzeugen Sophie und Bernhard haben ein paar seiner Notizen gefunden – den Rest müsst ihr knacken.",
+    "Jedes Thema verrät euch eine Ziffer. Mit allen vier öffnet ihr euer Geschenk. Viel Glück – ihr seid die Besten in so etwas."
   ],
 
   // Die vier Themen auf der Übersicht. Welche Räume zu einem Thema gehören, ergibt sich
@@ -53,8 +54,8 @@ window.SPIEL = {
       kurz: "Ehre, Klinge, Disziplin",
       bild: "bilder/samurai.svg",
       intro: [
-        "Ferdi hat den Fitnessraum des Hotels in ein Dojo verwandelt: Tatami-Matten, eine Rüstung in der Ecke und an der Wand ein großes Banner.",
-        "Vor einem verschlossenen Waffenschrank liegt ein Holzbrett mit vier leeren Sitzkissen, nummeriert von 1 bis 4 – von links nach rechts. Die vier Samurai-Figuren, die dort saßen, hat Ferdi weggeräumt. Nur sein Zettel ist geblieben."
+        "Lukas’ erste Notiz führt euch in ein Dojo: Tatami-Matten, eine Rüstung in der Ecke und an der Wand ein großes Banner.",
+        "Vor einem verschlossenen Waffenschrank liegt ein Holzbrett mit vier leeren Sitzkissen, nummeriert von 1 bis 4 – von links nach rechts. Bernhard hat dazugeschrieben: »Hier standen vier Samurai-Figuren. Ich hab sie beim Putzen weggeräumt. Sorry.«"
       ],
       raetsel: [
         {
@@ -71,7 +72,7 @@ window.SPIEL = {
             "6. Kenji trug das Katana.",
             "7. Das grüne Wappen lag auf Platz 1.",
             "8. Taro hat nie einen Speer angefasst.",
-            "Der Code für den Waffenschrank: die Platznummer von Kenji, dann von Hiro, dann von Taro, dann von Yuki.«"
+            "Der Code für den Waffenschrank: die Platznummer von Kenji, dann von Hiro, dann von Taro, dann von Yuki.« – L."
           ],
           frage: "Öffnet den Waffenschrank.",
           loesung: "1324",
@@ -89,18 +90,18 @@ window.SPIEL = {
           bild: "bilder/bushido.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "Auf der Klinge steht: ALLOHBZ",
-            "Daneben hat Ferdi geschrieben: »Jede Tugend auf meinem Banner hat jeden Buchstaben um einen Schritt im Alphabet nach vorne geschoben. Schiebt sie zurück, dann wisst ihr, wohin ihr müsst.«"
+            "Auf der Klinge steht: YJJMFZX",
+            "Lukas’ Notiz dazu: »Nicht jede Tugend durfte mitmachen. Nur die Tugenden, die mit einem einzigen Schriftzeichen geschrieben werden, haben jeden Buchstaben um je einen Schritt im Alphabet nach vorne geschoben. Schiebt sie zurück.«"
           ],
           frage: "Was steht wirklich auf der Klinge?",
           platzhalter: "Wort eintippen",
           loesung: ["teehaus", "das teehaus", "ins teehaus"],
           tipps: [
-            "Zählt zuerst die Tugenden auf dem Banner.",
-            "Jeder Buchstabe wurde so oft nach vorne verschoben, wie es Tugenden gibt. Geht im Alphabet genauso viele Schritte zurück – nach A kommt rückwärts wieder Z.",
-            "Fangt mit dem ersten Buchstaben an: Von A aus zählt ihr rückwärts Z, Y, X …"
+            "Schaut euch das Banner genau an: Manche Tugenden bestehen aus einem Schriftzeichen, manche aus zwei.",
+            "Zählt nur die Tugenden mit genau einem Zeichen. So viele Schritte wurde jeder Buchstabe nach vorne geschoben.",
+            "Geht im Alphabet genauso viele Schritte zurück – vor dem A kommt rückwärts wieder das Z."
           ],
-          erfolg: "Das Teehaus! Ihr steckt das Katana zurück und geht leise hinüber."
+          erfolg: "Das Teehaus! Sophie hat unter die Gravur gekritzelt: »Ich hätte auf Karaoke getippt.«"
         }
       ]
     },
@@ -112,57 +113,54 @@ window.SPIEL = {
       bild: "bilder/teehaus.svg",
       intro: [
         "Das Teehaus hat Schiebetüren aus Papier und Tatami-Matten. Schuhe bleiben draußen.",
-        "Auf einem niedrigen Regal stehen vier kleine Figuren. Ferdi hat einen Zettel daran geklebt."
+        "Auf einem niedrigen Regal stehen vier Glücksbringer: eine Winkekatze, ein Daruma, eine Kokeshi-Puppe und ein Tanuki. Daneben eine alte Balkenwaage – und eine Notiz von Lukas."
       ],
       raetsel: [
         {
           id: "teehaus-1",
           titel: "Die Glücksbringer",
-          typ: "auswahl",
+          typ: "schloss",
           bild: "bilder/teehaus.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Zu Beginn habe ich gar keine Augen.",
-            "Ein Auge malt man mir, wenn man sich etwas wünscht –",
-            "das zweite, wenn der Wunsch in Erfüllung geht.",
-            "In mir steckt, was ihr sucht.«"
+            "»Ich habe alle Figuren gewogen, aber nur die Vergleiche aufgeschrieben:",
+            "Die Winkekatze wiegt 3 Teile mehr als die Kokeshi.",
+            "Der Daruma wiegt so viel wie Winkekatze und Kokeshi zusammen.",
+            "Zwei Tanuki wiegen genauso viel wie Daruma und Kokeshi zusammen.",
+            "Alle vier Figuren zusammen wiegen 35 Teile.",
+            "Das Gewicht des Daruma öffnet die Teedose.« – L."
           ],
-          frage: "Welche Figur nehmt ihr vom Regal?",
-          optionen: ["Winkekatze", "Daruma", "Kokeshi-Puppe", "Tanuki"],
-          loesung: "Daruma",
+          frage: "Wie viel wiegt der Daruma?",
+          loesung: "13",
           tipps: [
-            "Schaut euch die Augen der Figuren im Bild genau an.",
-            "Gesucht ist eine Figur, deren Augen noch leer und weiß sind.",
-            "Dieser japanische Glücksbringer steht immer wieder auf, wenn man ihn umstößt – rund und meistens rot."
+            "Drückt alle Figuren durch das Gewicht der Kokeshi aus.",
+            "Winkekatze = Kokeshi + 3. Was ist dann der Daruma – und was zwei Tanuki?",
+            "Wenn ihr alles zusammenzählt, bekommt ihr eine Gleichung mit nur einer Unbekannten. Achtung: Ein Tanuki ist die Hälfte von etwas."
           ],
-          erfolg: "Der Daruma ist hohl. Darin steckt eine Anleitung für eine Teezeremonie – mit vertauschten Schritten."
+          erfolg: "In der Teedose liegt kein Tee, sondern ein zusammengerolltes Rollbild mit Pinselschrift."
         },
         {
           id: "teehaus-2",
-          titel: "Die Teezeremonie",
-          typ: "reihenfolge",
+          titel: "Das Rollbild",
+          typ: "text",
+          tafeln: ["十九", "二十一", "十九", "八", "九"],
           text: [
-            "»Bereitet mir eine Schale Matcha zu, und zwar richtig:",
-            "Erst warm, dann grün, dann nass, dann Schaum – und ganz zum Schluss bekommt der Gast etwas.«"
+            "Auf dem Rollbild stehen fünf Zeichen-Gruppen. An der Wand des Teehauses hängt eine Zahlentafel:",
+            "一 1 · 二 2 · 三 3 · 四 4 · 五 5 · 六 6 · 七 7 · 八 8 · 九 9 · 十 10",
+            "Lukas: »Größere Zahlen schreibt man in Japan aus diesen Zeichen zusammen. Und jede Zahl ist eigentlich ein Buchstabe.«"
           ],
-          frage: "Tippt die Schritte in der richtigen Reihenfolge an.",
-          karten: [
-            "Schale mit heißem Wasser anwärmen",
-            "Matcha-Pulver in die Schale geben",
-            "Heißes Wasser aufgießen",
-            "Mit dem Bambusbesen schaumig schlagen",
-            "Schale drehen und dem Gast reichen"
-          ],
+          frage: "Wohin müsst ihr als Nächstes?",
+          platzhalter: "Ort eintippen",
+          loesung: ["sushi", "sushibar", "sushi-bar", "die sushibar", "die sushi-bar", "in die sushibar"],
           tipps: [
-            "Ferdis Merkspruch ist eure Anleitung: warm – grün – nass – Schaum – Gast.",
-            "»Grün« steht für das Matcha-Pulver, »nass« für das Aufgießen.",
-            "Ordnet jede Karte einem Wort aus dem Merkspruch zu – dann ergibt sich die Reihenfolge von selbst."
+            "十 ist 10. Steht eine Zahl davor, wird multipliziert – steht eine dahinter, wird addiert.",
+            "So wird zum Beispiel 三十二 zu 3 × 10 + 2 = 32.",
+            "Wenn ihr fünf Zahlen habt: Welcher Buchstabe steht im Alphabet an dieser Stelle?"
           ],
-          erfolg: "Auf dem Boden der Teeschale steht mit Pinsel geschrieben: »Sushi-Bar, Erdgeschoss«."
+          erfolg: "Bernhard hat auf die Rückseite des Rollbilds geschrieben: »Ich hab Hunger. Wir sehen uns da.«"
         }
       ]
     },
-
     {
       id: "sushi",
       thema: "Japan",
@@ -170,13 +168,13 @@ window.SPIEL = {
       kurz: "Alles läuft im Kreis",
       bild: "bilder/sushi.svg",
       intro: [
-        "In der Sushi-Bar dreht sich ein Förderband mit bunten Tellern im Kreis. Der Koch nickt euch zu und schiebt euch einen zerknitterten Kassenbon hin.",
-        "»Der Herr Ferdi war schon da«, sagt er. »Er hat gesagt, ihr wisst dann schon.«"
+        "In der Sushi-Bar dreht sich ein Förderband mit bunten Tellern im Kreis. Bernhard ist natürlich schon weg, aber der Koch schiebt euch einen zerknitterten Kassenbon hin.",
+        "»Der Herr Lukas war vorgestern da«, sagt er. »Er hat gesagt, ihr wisst dann schon.«"
       ],
       raetsel: [
         {
           id: "sushi-1",
-          titel: "Ferdis Rechnung",
+          titel: "Lukas’ Rechnung",
           typ: "schloss",
           bild: "bilder/teller.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
@@ -184,7 +182,7 @@ window.SPIEL = {
             "»Ich habe genau 10 Teller gegessen und dafür 37 Euro bezahlt.",
             "Von jeder Farbe war mindestens ein Teller dabei.",
             "Ich hatte mehr blaue als grüne Teller – und genau doppelt so viele rote wie goldene.",
-            "Der Code für die Kasse: wie viele grüne, blaue, rote und goldene Teller ich hatte – genau in dieser Reihenfolge.«"
+            "Der Code für die Kasse: wie viele grüne, blaue, rote und goldene Teller ich hatte – genau in dieser Reihenfolge.« – L."
           ],
           frage: "Öffnet die Kasse.",
           loesung: "1621",
@@ -202,8 +200,8 @@ window.SPIEL = {
           bild: "bilder/foerderband.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "Auf jedem Teller am Förderband klebt eine Nummer. Ferdi schreibt:",
-            "»Meine Teller folgen einer Regel. Zwei habe ich gegessen – ihre Nummern, von links nach rechts, öffnen die Box des Kochs.«"
+            "Auf jedem Teller am Förderband klebt eine Nummer. Lukas schreibt:",
+            "»Meine Teller folgen einer Regel. Zwei hat Bernhard gegessen – ihre Nummern, von links nach rechts, öffnen die Box des Kochs.«"
           ],
           frage: "Welche Nummern hatten die fehlenden Teller?",
           loesung: "2947",
@@ -212,11 +210,10 @@ window.SPIEL = {
             "Nehmt zwei Teller, die direkt nebeneinander stehen. Was haben sie mit dem Teller rechts daneben zu tun?",
             "Prüft eure Regel am Ende: Die beiden fehlenden Nummern müssen zusammen genau die letzte Nummer ergeben."
           ],
-          erfolg: "Die Box öffnet sich. Darin liegt ein Holzschild mit dem Zeichen ♨ und einem Pfeil: »Onsen – hinter dem Hotel«."
+          erfolg: "Die Box öffnet sich. Darin liegt ein Holzschild mit dem Zeichen ♨ und Sophies Handschrift: »Onsen. Bringt Handtücher mit.«"
         }
       ]
     },
-
     {
       id: "onsen",
       thema: "Japan",
@@ -225,7 +222,7 @@ window.SPIEL = {
       ziffer: { thema: "Japan", wert: "7" },
       bild: "bilder/onsen.svg",
       intro: [
-        "Hinter dem Hotel dampft ein Onsen zwischen Felsen und Bambus. Aus einem Rohr sprudelt heißes Quellwasser, daneben plätschert ein kalter Bergbach.",
+        "Ein Onsen dampft zwischen Felsen und Bambus. Aus einem Rohr sprudelt heißes Quellwasser, daneben plätschert ein kalter Bergbach.",
         "Ein Holzkasten am Beckenrand ist mit einem Zahlenschloss gesichert. Natürlich hängt ein Zettel daran."
       ],
       raetsel: [
@@ -237,8 +234,8 @@ window.SPIEL = {
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
             "»Das Becken fasst genau 15 Eimer Wasser. Ich fülle es nur mit Wasser aus der heißen Quelle und aus dem kalten Bach – die Temperaturen stehen auf den Schildern.",
-            "Mein perfektes Bad hat genau 48 Grad. Ja, ich mag es heiß.",
-            "Der Code: wie viele Eimer heißes Wasser, dann wie viele Eimer kaltes Wasser.«"
+            "Sophies perfektes Bad hat genau 48 Grad. Ja, sie mag es heiß.",
+            "Der Code: wie viele Eimer heißes Wasser, dann wie viele Eimer kaltes Wasser.« – L."
           ],
           frage: "Öffnet den Holzkasten.",
           loesung: "78",
@@ -247,25 +244,25 @@ window.SPIEL = {
             "Rechnet aus, wie viel »Wärme« 15 Eimer mit 48 Grad zusammen haben – und wie viel jeder heiße und jeder kalte Eimer beiträgt.",
             "Jeder heiße Eimer, den ihr gegen einen kalten tauscht, macht das ganze Becken ein Stück wärmer. Um wie viel genau?"
           ],
-          erfolg: "Im Holzkasten liegt ein Fernglas und Ferdis nächster Zettel: »Schaut mal, wer da badet.«"
+          erfolg: "Im Holzkasten liegt ein Fernglas und Lukas’ nächster Zettel: »Schaut mal, wer da alles badet.«"
         },
         {
           id: "onsen-2",
-          titel: "Die Schneeaffen",
+          titel: "Gäste im Nebel",
           typ: "schloss",
           text: [
-            "Im Nebel über dem Becken erkennt ihr Badegäste – und ein paar Schneeaffen, die sich dazugesetzt haben.",
-            "»Ich habe von meinem Platz aus 14 Köpfe und 40 Beine gezählt. Jeder Affe hat vier Beine, jeder Mensch zwei.",
-            "Der Code für das Tor zum Garten: zuerst die Zahl der Affen, dann die Zahl der Menschen.«"
+            "Durch das Fernglas erkennt ihr im Dampf Badegäste, Schneeaffen – und ein paar Kraniche, die am Beckenrand stehen.",
+            "»Ich habe 15 Köpfe gezählt, 42 Beine und 6 Flügel. Affen haben vier Beine, Menschen und Kraniche zwei. Nur Kraniche haben Flügel.",
+            "Der Code für das Gartentor: die Zahl der Affen, dann der Menschen, dann der Kraniche.« – L."
           ],
           frage: "Öffnet das Gartentor.",
-          loesung: "68",
+          loesung: "663",
           tipps: [
-            "Jeder Kopf gehört entweder zu einem Affen oder zu einem Menschen.",
-            "Stellt euch vor, alle 14 wären Menschen. Wie viele Beine wären das – und wie viele fehlen dann noch?",
-            "Jeder Affe bringt im Vergleich zu einem Menschen zwei Beine mehr mit."
+            "Fangt mit den Flügeln an – die verraten euch eine Tierart sofort.",
+            "Zieht die Kraniche von den Köpfen und Beinen ab. Was übrig bleibt, gehört zu Affen und Menschen.",
+            "Stellt euch vor, alle übrigen wären Menschen. Wie viele Beine fehlen dann noch – und wie viele bringt jeder Affe zusätzlich mit?"
           ],
-          erfolg: "Das Tor öffnet sich. Ein Affe drückt euch einen Spielchip in die Hand: »Roulette – 1. Stock«."
+          erfolg: "Das Gartentor öffnet sich. Ein Schneeaffe drückt euch einen Spielchip in die Hand. Darauf steht: »Japan geschafft. Weiter ins Casino.«"
         }
       ]
     },
@@ -278,26 +275,28 @@ window.SPIEL = {
       kurz: "Rien ne va plus",
       bild: "bilder/roulette.svg",
       intro: [
-        "Im ersten Stock hat Ferdi einen Casinoabend aufgebaut: grüner Filz, gedimmtes Licht, ein Kessel, der leise klackert.",
-        "Der Croupier nickt euch zu und schiebt einen Umschlag über den Tisch."
+        "Grüner Filz, gedimmtes Licht, ein Kessel, der leise klackert. Lukas war hier offensichtlich in seinem Element.",
+        "Der Croupier schiebt euch einen Umschlag über den Tisch. Sophie hat außen draufgeschrieben: »Er hat verloren. Natürlich.«"
       ],
       raetsel: [
         {
           id: "roulette-1",
-          titel: "Der richtige Einsatz",
+          titel: "Zwei Einsätze",
           typ: "schloss",
           bild: "bilder/roulette.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Setzt auf die Zahl, die rot ist, gerade ist und im ersten Dutzend liegt.",
-            "Nur eine passt. Sie öffnet die Kassette des Croupiers.«"
+            "»Ich habe zweimal gesetzt. Beide Zahlen liegen auf diesem Tisch.",
+            "Erster Einsatz: eine schwarze Zahl. In ihrer waagrechten Reihe liegen genau zwei rote Zahlen – und zwar direkt links und rechts neben ihr.",
+            "Zweiter Einsatz: eine rote Zahl. Ihre Quersumme ist genau so groß wie die Anzahl der schwarzen Zahlen in ihrer senkrechten Spalte.",
+            "Die beiden Zahlen hintereinander öffnen die Kassette.« – L."
           ],
-          frage: "Stellt die Zahl am Schloss ein.",
-          loesung: "12",
+          frage: "Stellt die beiden Zahlen am Schloss ein.",
+          loesung: "41",
           tipps: [
-            "»Erstes Dutzend« meint die Zahlen 1 bis 12.",
-            "Streicht im Bild alle schwarzen und alle ungeraden Zahlen.",
-            "Schaut euch die oberste Reihe des Tisches ganz genau an."
+            "Zählt für jede waagrechte Reihe zuerst, wie viele rote Zahlen darin liegen. Nur eine Reihe hat genau zwei.",
+            "Für den zweiten Einsatz: Notiert für jede senkrechte Spalte, wie viele schwarze Zahlen sie hat, und vergleicht mit der Quersumme jeder roten Zahl darin.",
+            "Die Null zählt bei beiden Einsätzen nicht mit."
           ],
           erfolg: "Klick! In der Kassette liegt ein Stapel Jetons und eine Notiz."
         },
@@ -308,17 +307,17 @@ window.SPIEL = {
           bild: "bilder/jetons.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Zählt meinen Einsatz. Der Wert der Jetons steht auf dem Schild.",
-            "Die Summe öffnet die Kasse.«"
+            "»Das ist alles, was von meinem Einsatz übrig ist. Die Werte habe ich mir nur als Wechselkurse gemerkt – sie stehen auf dem Schild.",
+            "Die Summe aller Jetons öffnet die Kasse.« – L."
           ],
-          frage: "Wie viel ist Ferdis Einsatz wert?",
+          frage: "Wie viel sind die Jetons zusammen wert?",
           loesung: "244",
           tipps: [
-            "Zählt zuerst, wie viele Jetons es von jeder Farbe gibt.",
-            "Nehmt die Anzahl jeder Farbe mal ihren Wert vom Schild – und zählt am Ende alles zusammen.",
-            "Die weißen Jetons sind zwar nur 1 wert, aber es liegen mehr davon herum, als man auf den ersten Blick sieht."
+            "Fangt beim Weißen an – das ist der einzige Jeton, dessen Wert direkt dasteht.",
+            "Rechnet euch Stufe für Stufe nach oben: Weiß → Rot → Grün → Schwarz.",
+            "Zählt die Jetons jeder Farbe sorgfältig – manche liegen am Rand und sind leicht zu übersehen."
           ],
-          erfolg: "Die Kasse öffnet sich. Darin liegt eine Spielkarte, ein Pik-Ass. Auf der Rückseite: »Pokertisch«."
+          erfolg: "Die Kasse öffnet sich. Darin liegt ein Pik-Ass. Auf der Rückseite: »Pokertisch. Diesmal hätte ich gewinnen müssen.«"
         }
       ]
     },
@@ -326,32 +325,33 @@ window.SPIEL = {
       id: "poker",
       thema: "Casino",
       name: "Der Pokertisch",
-      ziffer: { thema: "Casino", wert: "3" },
       kurz: "Alles auf eine Karte",
+      ziffer: { thema: "Casino", wert: "3" },
       bild: "bilder/poker.svg",
       intro: [
-        "Am Pokertisch sind drei Hände aufgedeckt. Vor jeder liegt ein Kärtchen mit einem Ort: Bar, Tresor, Spielautomat.",
-        "Ferdis Zettel liegt in der Mitte auf dem Pot."
+        "Am Pokertisch liegen fünf offene Karten in der Mitte. Davor drei Spieler-Plätze mit je zwei aufgedeckten Karten – und Namensschildern: Bar, Tresor, Spielautomat.",
+        "Lukas: »Texas Hold’em. Jeder bildet seine beste Hand aus seinen zwei Karten und den fünf in der Mitte.«"
       ],
       raetsel: [
         {
           id: "poker-1",
-          titel: "Die beste Hand",
+          titel: "Showdown",
           typ: "auswahl",
           bild: "bilder/poker.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Wer die beste Hand hat, bewacht mein nächstes Versteck.«"
+            "»Ich saß am Platz mit der besten Hand – und mein nächstes Versteck trägt denselben Namen.« – L.",
+            "Darunter Sophie: »Er saß übrigens NICHT am Platz mit dem Flush. Das war ich.«"
           ],
           frage: "Welche Hand gewinnt?",
           optionen: ["Bar", "Tresor", "Spielautomat"],
           loesung: "Spielautomat",
           tipps: [
-            "Bestimmt für jede Hand, was sie hat: Paar, Drilling, Straße, Flush …?",
-            "Die Bar hat eine Straße, der Tresor einen Flush. Was hat die dritte Hand?",
-            "Beim Poker gilt: Full House schlägt Flush, und Flush schlägt Straße."
+            "Jeder Platz darf die fünf Karten aus der Mitte mitbenutzen. Bildet für jeden Platz die beste Hand aus fünf von sieben Karten.",
+            "Zwei Plätze haben ein Full House. Bei zwei Full Houses entscheidet zuerst der Drilling.",
+            "Die Reihenfolge der Hände: Full House schlägt Flush, Flush schlägt Straße."
           ],
-          erfolg: "Am Spielautomaten klebt ein Zettel: »Ein Code, und ich zahle aus.«"
+          erfolg: "Am Spielautomaten klebt ein Zettel: »Nur die Gewinnlinie zählt.«"
         },
         {
           id: "poker-2",
@@ -360,17 +360,17 @@ window.SPIEL = {
           bild: "bilder/automat.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "Die Walzen sind stehen geblieben. Auf dem Automaten hängt eine Gewinntabelle.",
-            "»Ersetzt die Bilder durch ihre Zahlen – von links nach rechts.«"
+            "Die drei Walzen sind stehen geblieben, man sieht je drei Bilder übereinander. Oben hängt eine Gewinntabelle.",
+            "»Die Gewinnlinie verläuft schräg: von links oben nach rechts unten. Ersetzt die Bilder darauf durch ihre Zahlen.« – L."
           ],
           frage: "Gebt den Code am Automaten ein.",
           loesung: "537",
           tipps: [
-            "Oben auf dem Automaten hängt eine Gewinntabelle.",
-            "Jedes Bild auf den Walzen hat in der Tabelle eine Zahl.",
-            "Lest die Walzen von links nach rechts – nicht jedes Bild aus der Tabelle kommt auf den Walzen vor."
+            "Ignoriert die mittlere Reihe – auch wenn sie am auffälligsten ist.",
+            "Links oben, Mitte, rechts unten: Das sind die drei Felder der Gewinnlinie.",
+            "Die Gewinntabelle verrät, welche Zahl zu jedem Bild gehört."
           ],
-          erfolg: "Der Automat rattert und spuckt ein Armband aus: »Therme – Eintritt frei«."
+          erfolg: "Der Automat rattert und spuckt ein Bändchen aus: »Therme – Eintritt für zwei. Bernhard hat schon Liegen reserviert.«"
         }
       ]
     },
@@ -383,29 +383,32 @@ window.SPIEL = {
       kurz: "Warmes Wasser, kühler Kopf",
       bild: "bilder/therme.svg",
       intro: [
-        "Im Keller des Hotels liegt die Therme. Dampf steigt aus vier Becken, an jedem hängt ein Schild mit der Wassertemperatur.",
-        "Auf einer Liege liegt ein Bademantel – in der Tasche steckt Ferdis nächster Zettel."
+        "Dampf steigt aus vier Becken, an jedem hängt ein Schild mit der Wassertemperatur.",
+        "Auf einer Liege liegt Bernhards Bademantel. In der Tasche steckt eine Notiz von Lukas."
       ],
       raetsel: [
         {
           id: "therme-1",
-          titel: "Die Becken",
+          titel: "Wer badet wo?",
           typ: "auswahl",
           bild: "bilder/therme.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Im wärmsten Becken bade ich nicht, im kältesten auch nicht.",
-            "Und unter 34 Grad friere ich. Am Grund meines Lieblingsbeckens liegt etwas für euch.«"
+            "»Sophie, Bernhard, Tante Resi und ich waren hier – jeder in einem anderen Becken.",
+            "Sophie friert schnell: Ihr Becken hatte mindestens 36 Grad.",
+            "Bernhard saß in einem Becken, das genau 4 Grad kälter war als meins.",
+            "Mein Becken war wärmer als das von Tante Resi.",
+            "Am Grund meines Beckens liegt der Spindschlüssel.« – L."
           ],
           frage: "In welchem Becken taucht ihr?",
           optionen: ["Whirlpool", "Solebecken", "Außenbecken", "Sportbecken"],
           loesung: "Solebecken",
           tipps: [
-            "Schaut auf die Temperaturschilder an den Becken.",
-            "Streicht das wärmste und das kälteste Becken.",
-            "Von den beiden übrigen ist nur eines warm genug für Ferdi."
+            "Schreibt die vier Temperaturen auf. Welche Paare von Becken liegen genau 4 Grad auseinander?",
+            "Geht jedes mögliche Paar für Lukas und Bernhard durch. Bleibt dann für Sophie noch ein passendes Becken?",
+            "Tante Resi muss kälter baden als Lukas. Bei einem der übrig gebliebenen Fälle klappt das nicht."
           ],
-          erfolg: "Am Grund liegt ein Spindschlüssel. Die Nummer auf dem Anhänger ist leider abgerieben."
+          erfolg: "Am Grund liegt ein Spindschlüssel. Die Nummer auf dem Anhänger ist abgerieben."
         },
         {
           id: "therme-2",
@@ -414,53 +417,50 @@ window.SPIEL = {
           bild: "bilder/spinde.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Mein Spind ist der mit dem Handtuch. Das Nummernschild ist abgefallen – aber ihr könnt doch zählen, oder?«"
+            "»Mein Spind ist der mit dem Handtuch. Ein paar Nummernschilder sind abgefallen – aber die Nummern folgen einer Regel.« – L."
           ],
-          frage: "Welche Nummer hat Ferdis Spind?",
-          loesung: "23",
+          frage: "Welche Nummer hat Lukas’ Spind?",
+          loesung: "24",
           tipps: [
-            "Die Nummern folgen einem Muster – schaut, wie sie von links nach rechts wachsen.",
-            "Und wie verändern sie sich von einer Reihe zur nächsten?",
-            "Das Handtuch hängt in der mittleren Reihe. Welche Nummern stehen direkt daneben, darüber und darunter?"
+            "Schaut euch eine vollständige Reihe an: Wie kommt man von einer Nummer zur nächsten?",
+            "In jeder Reihe passiert dasselbe – nur der Startwert ist anders.",
+            "Die erste Spalte gibt den Startwert, danach wird bei jedem Schritt nach rechts dasselbe gemacht."
           ],
-          erfolg: "Im Spind liegt ein Saunatuch mit einer Stickerei: »Bis gleich in der Sauna«."
+          erfolg: "Im Spind liegt ein Saunatuch mit Sophies Stickerei: »Sauna. Und dreht ja die Sanduhr richtig um.«"
         }
       ]
     },
     {
       id: "sauna",
-      thema: "Sauna",
+      thema: "Therme",
       name: "Die Sauna",
-      ziffer: { thema: "Therme", wert: "9" },
       kurz: "Ins Schwitzen kommen",
+      ziffer: { thema: "Therme", wert: "9" },
       bild: "bilder/sauna.svg",
       intro: [
-        "Holzgeruch, 90 Grad und eine Sanduhr, die langsam rieselt. Vor der Saunatür hängt eine Tafel mit dem Aufgussplan.",
-        "Neben der Tür steckt ein Zettel im Handtuchhaken."
+        "Holzgeruch, 90 Grad. Auf der Bank stehen zwei Sanduhren: eine für 7 Minuten, eine für 11 Minuten.",
+        "Neben der Tür hängt der Aufgussplan. Und natürlich steckt ein Zettel im Handtuchhaken."
       ],
       raetsel: [
         {
           id: "sauna-1",
-          titel: "Das Saunaritual",
-          typ: "reihenfolge",
+          titel: "Die Sanduhren",
+          typ: "schloss",
+          bild: "bilder/sauna.svg",
+          bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Ich verrate euch nur etwas, wenn ihr richtig sauniert.",
-            "Wer sauniert, fängt sauber an und hört entspannt auf.«"
+            "»Sophie will genau 15 Minuten schwitzen, keine Sekunde mehr. Eine Uhr gibt es hier nicht, nur die 7-Minuten- und die 11-Minuten-Sanduhr.",
+            "Ihr dreht beide gleichzeitig um, wenn Sophie sich hinsetzt. Danach dürft ihr Sanduhren nur in dem Moment umdrehen, in dem eine von ihnen gerade durchgelaufen ist.",
+            "Der Code: nach wie vielen Minuten ihr die 7-Minuten-Sanduhr zum zweiten Mal umdreht.« – L."
           ],
-          frage: "Tippt die Schritte in der richtigen Reihenfolge an.",
-          karten: [
-            "Duschen",
-            "Gut abtrocknen",
-            "Schwitzen in der Sauna",
-            "Abkühlen an der frischen Luft",
-            "Ausruhen"
-          ],
+          frage: "Nach wie vielen Minuten dreht ihr die kleine Sanduhr zum zweiten Mal um?",
+          loesung: "11",
           tipps: [
-            "Wer in die Sauna geht, sollte vorher sauber sein.",
-            "Nass schwitzt man schlechter als trocken.",
-            "Nach der Hitze braucht der Körper zuerst Abkühlung und dann Ruhe."
+            "Spielt die Zeit Schritt für Schritt durch: Was passiert nach 7 Minuten, was nach 11?",
+            "15 lässt sich aus 11 und einem Rest zusammensetzen. Wie viele Minuten fehlen nach 11 noch?",
+            "Wenn die kleine Sanduhr gerade erst eine Weile läuft, steckt in ihrer oberen Hälfte nur wenig Sand – und in der unteren genau die Zeit, die schon vergangen ist."
           ],
-          erfolg: "Ferdis nächster Zettel steckt hinter der Tafel mit dem Aufgussplan."
+          erfolg: "Nach genau 15 Minuten steht Sophie auf. Hinter der Sanduhr klebt ein Zettel: »Mein Lieblingsaufguss. Schaut auf den Plan.«"
         },
         {
           id: "sauna-2",
@@ -470,16 +470,17 @@ window.SPIEL = {
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
             "»Mein Lieblingsaufguss duftet weder nach einem Baum noch nach einer Frucht.",
-            "Seine Uhrzeit ist der Code für den Kasten des Saunameisters.«"
+            "Er beginnt genau zweieinhalb Stunden nach dem ersten Frucht-Aufguss des Tages.",
+            "Seine Uhrzeit ist der Code für den Kasten des Saunameisters.« – L."
           ],
           frage: "Stellt die Uhrzeit ein (Stunden und Minuten).",
           loesung: "1630",
           tipps: [
-            "Lest Ferdis Zettel genau: Sein Lieblingsduft ist kein Baum und keine Frucht.",
-            "Birke und Zirbe sind Bäume, die Orange ist eine Frucht.",
+            "Sortiert die Aufgüsse in drei Gruppen: Bäume, Früchte und der Rest. Vorsicht – nicht alles, was nach Kräutern klingt, ist auch ein Kraut.",
+            "Welcher Frucht-Aufguss ist der früheste des Tages? Rechnet von dort zweieinhalb Stunden weiter.",
             "Gebt die Uhrzeit ohne Doppelpunkt ein: erst die Stunden, dann die Minuten."
           ],
-          erfolg: "Im Kasten des Saunameisters liegt ein Spielwürfel mit einem Zettel: »Spielezimmer, 2. Stock«."
+          erfolg: "Im Kasten des Saunameisters liegt ein Spielwürfel mit Bernhards Notiz: »Spieleabend! Ich hab schon alles aufgebaut.«"
         }
       ]
     },
@@ -492,27 +493,28 @@ window.SPIEL = {
       kurz: "Würfel und Schachteln",
       bild: "bilder/regal.svg",
       intro: [
-        "Das Spielezimmer ist das Herz des Hotels: ein großer Tisch, gemütliches Licht und ein Regal voller Spiele.",
-        "Auf dem Tisch steht eine Spieleschachtel mit Zahlenschloss. Davor liegen drei Würfel."
+        "Ein großer Tisch, gemütliches Licht und ein Regal voller Spiele – genau wie bei euren Spieleabenden.",
+        "Auf dem Tisch steht eine Spieleschachtel mit Zahlenschloss. Bernhard hat daneben einen Turm aus drei Würfeln gebaut. Natürlich."
       ],
       raetsel: [
         {
           id: "spielezimmer-1",
-          titel: "Die Würfel",
+          titel: "Bernhards Würfelturm",
           typ: "schloss",
           bild: "bilder/wuerfel.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Der Code steht auf den Seiten, die ihr nicht seht – auf der Unterseite jedes Würfels, von links nach rechts.«"
+            "»Drei ganz normale Würfel, aufeinandergestapelt. Ihr seht nur die Vorderseiten und die oberste Fläche.",
+            "Der Code: die Summe aller Augen auf den Flächen, die ihr nicht sehen könnt, weil sie aufeinander oder auf dem Tisch liegen.« – L."
           ],
           frage: "Öffnet die Spieleschachtel.",
-          loesung: "152",
+          loesung: "16",
           tipps: [
-            "Ihr seht nur die Oberseiten. Gesucht sind die Seiten, die auf dem Tisch liegen.",
             "Bei jedem normalen Würfel ergeben gegenüberliegende Seiten zusammen immer dieselbe Zahl.",
-            "Diese Zahl ist bei allen Würfeln gleich – schaut euch einen echten Würfel an, wenn ihr unsicher seid."
+            "Zählt erst, wie viele Flächen versteckt sind: zwischen den Würfeln und unter dem untersten.",
+            "Beim mittleren und untersten Würfel sind jeweils zwei gegenüberliegende Flächen versteckt. Beim obersten nur eine – und die liegt genau gegenüber von einer Fläche, die ihr seht."
           ],
-          erfolg: "In der Schachtel liegt eine Karte: »Nur wer steht, zählt. Seht ins Regal.«"
+          erfolg: "In der Schachtel liegt eine Karte: »Nur was steht, zählt. Seht ins Regal.«"
         },
         {
           id: "spielezimmer-2",
@@ -521,50 +523,52 @@ window.SPIEL = {
           bild: "bilder/regal.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Nur die Spiele, die aufrecht stehen, zählen. Nehmt von links nach rechts jeweils den ersten Buchstaben.",
-            "Das Wort verrät euch mein letztes Zimmer.«"
+            "»Jede Schachtel hat einen kleinen Aufkleber mit einer Zahl. Liegende Schachteln sind nur Ablenkung.",
+            "Die Zahl sagt euch, welcher Buchstabe im Namen des Spiels zählt. Von links nach rechts ergibt sich das letzte Zimmer.« – L."
           ],
           frage: "Welches Wort ergibt sich?",
           platzhalter: "Wort eintippen",
           loesung: ["bomb", "bomb busters", "bombbusters"],
           tipps: [
-            "Manche Schachteln stehen, manche liegen. Nur die stehenden zählen.",
-            "Lest die Anfangsbuchstaben der stehenden Spiele von links nach rechts.",
-            "Das Wort ist englisch – und erinnert an ein Spiel, das Iris & Michi gerne spielen."
+            "Streicht zuerst alle liegenden Schachteln.",
+            "Eine 3 bedeutet: der dritte Buchstabe im Namen des Spiels.",
+            "Das Wort ist englisch – und erinnert an ein Spiel, das ihr beide gerne spielt."
           ],
-          erfolg: "Bomb! Hinter dem Regal ist eine Tür mit der Aufschrift »Bomb Busters – Entschärfungsteam«."
+          erfolg: "Bomb! Hinter dem Regal ist eine Tür mit der Aufschrift »Bomb Busters – Entschärfungsteam Sophie, Lukas & Bernhard«."
         }
       ]
     },
     {
       id: "bombbusters",
-      thema: "Bomb Busters",
+      thema: "Brettspiele",
       name: "Die Bombe",
-      ziffer: { thema: "Brettspiele", wert: "2" },
       kurz: "Das richtige Kabel",
+      ziffer: { thema: "Brettspiele", wert: "2" },
       bild: "bilder/bombe.svg",
       intro: [
         "Mitten im Raum steht eine Bombe aus Pappe, ganz im Stil von Bomb Busters. Der Zünder tickt, die Kabelständer stehen bereit.",
-        "Ferdi hat die Regeln an die Wand gepinnt: Die Kabel auf jedem Ständer liegen aufsteigend sortiert, von links nach rechts. Blaue Kabel haben die Werte 1 bis 12. Rote Kabel haben Werte wie 4,5 – wer eines durchschneidet, lässt die Bombe hochgehen."
+        "Lukas hat die Regeln an die Wand gepinnt: Die Kabel auf jedem Ständer liegen aufsteigend sortiert, von links nach rechts. Blaue Kabel haben ganze Werte von 1 bis 12. Gelbe Kabel haben Werte mit ,1 (zum Beispiel 3,1), rote Kabel Werte mit ,5 (zum Beispiel 4,5). Wer ein rotes Kabel durchschneidet, lässt die Bombe hochgehen."
       ],
       raetsel: [
         {
           id: "bombbusters-1",
-          titel: "Ferdis Ständer",
+          titel: "Bernhards Ständer",
           typ: "schloss",
           bild: "bilder/kabel1.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Auf meinem Ständer liegen fünf blaue Kabel, aufsteigend sortiert. Drei habe ich euch gezeigt, zwei sind verdeckt.",
-            "Kein Wert kommt bei mir doppelt vor, und alle fünf zusammen ergeben 21.",
-            "Die zwei verdeckten Werte, von links nach rechts, sind der Code.«"
+            "»Auf Bernhards Ständer liegen sechs blaue Kabel, drei davon verdeckt.",
+            "Kein Wert kommt doppelt vor. Alle sechs zusammen ergeben 41.",
+            "Das fünfte Kabel ist eine Primzahl.",
+            "Multipliziert man die drei verdeckten Werte, ist das Ergebnis durch 9 teilbar.",
+            "Die drei verdeckten Werte, von links nach rechts, sind der Code.« – L."
           ],
           frage: "Welche Werte haben die verdeckten Kabel?",
-          loesung: "25",
+          loesung: "3611",
           tipps: [
-            "Zählt die sichtbaren Kabel zusammen. Wie viel fehlt noch bis 21?",
-            "Die Kabel sind aufsteigend sortiert: Jedes verdeckte Kabel muss größer als sein linker und kleiner als sein rechter Nachbar sein.",
-            "Kein Wert kommt doppelt vor. Probiert aus, welche zwei Zahlen in die Lücken passen und zusammen die fehlende Summe ergeben."
+            "Die Sortierung verrät euch, zwischen welchen Werten jedes verdeckte Kabel liegen muss.",
+            "Beim fünften Kabel bleibt wegen der Primzahl nur eine Möglichkeit. Dann wisst ihr auch, was die zwei anderen verdeckten zusammen ergeben müssen.",
+            "Für die zwei übrigen gibt es zwei Paare, die in die Lücke passen. Nur bei einem ist das Produkt durch 9 teilbar."
           ],
           erfolg: "Der Zünder stockt. Ein zweiter Ständer klappt auf – mit einem roten Warnlicht."
         },
@@ -575,16 +579,16 @@ window.SPIEL = {
           bild: "bilder/kabel2.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Letzte Mission! Die drei verdeckten Kabel sind: das rote Kabel 4,5, das blaue Kabel 6 und noch ein blaues Kabel.",
-            "Schneidet die blaue 6, und die Bombe ist entschärft. Erwischt ihr das rote … dann sagt lieber niemand Ja.«"
+            "»Letzte Mission! Auf diesem Ständer sind vier Kabel verdeckt: zwei rote (2,5 und 11,5), ein blaues (6) und ein gelbes (8,1).",
+            "Nur wenn ihr das gelbe Kabel durchschneidet, ist die Bombe entschärft. Erwischt ihr ein rotes … dann gibt’s kein Geschenk.« – L."
           ],
           frage: "Welches Kabel schneidet ihr durch?",
-          optionen: ["Kabel B", "Kabel D", "Kabel E"],
+          optionen: ["Kabel B", "Kabel D", "Kabel E", "Kabel G"],
           loesung: "Kabel E",
           tipps: [
-            "Die Kabel liegen aufsteigend sortiert. Welche Werte können zwischen der 2 und der 4 liegen?",
-            "Weder die 4,5 noch die 6 passen auf Kabel B.",
-            "Auf D und E liegen also die 4,5 und die 6 – in welcher Reihenfolge, verrät euch die Sortierung."
+            "Jedes verdeckte Kabel muss größer sein als sein linker und kleiner als sein rechter sichtbarer Nachbar.",
+            "Kabel B liegt zwischen 1 und 4, Kabel G ganz rechts nach der 10. Welche der vier verdeckten Werte passen dorthin?",
+            "Für die Lücke zwischen 4 und 10 bleiben zwei Werte übrig. Die Sortierung entscheidet, welcher zuerst kommt."
           ],
           erfolg: "Schnipp. Der Zünder bleibt stehen, das Licht wird grün. Die Bombe ist entschärft!"
         }
@@ -593,11 +597,11 @@ window.SPIEL = {
   ],
 
   finale: {
-    titel: "Der Code fürs Schloss",
+    titel: "Der Code für euer Geschenk",
     bild: "bilder/kaestchen.svg",
     text: [
-      "Ihr habt alle vier Welten von Iris & Michi bereist und aus jeder eine Ziffer mitgebracht.",
-      "Jetzt seid ihr dran: Stellt die vier Ziffern am echten Schloss ein – genau in dieser Reihenfolge. Dahinter warten die Ringe."
+      "Ihr habt es geschafft – alle vier Welten, alle Rätsel. Lukas ist sehr erleichtert, Sophie sagt, sie hätte es »natürlich gewusst«, und Bernhard hat schon wieder Hunger.",
+      "Stellt die vier Ziffern jetzt am Schloss eures Geschenks ein, genau in dieser Reihenfolge. Alles Liebe zur Hochzeit, Iris und Michi!"
     ]
   }
 };
