@@ -32,6 +32,25 @@
     return String(x.loesung);
   }
 
+  // ---------- Themen (Gruppen von Räumen) ----------
+  var GRUPPEN = (function () {
+    var g = [], akt = [];
+    SPIEL.raeume.forEach(function (r, i) {
+      akt.push(i);
+      if (r.ziffer || i === SPIEL.raeume.length - 1) {
+        var name = r.ziffer ? r.ziffer.thema : (r.thema || "Weitere Räume");
+        var info = (SPIEL.themen && SPIEL.themen[name]) || {};
+        g.push({ name: name, kurz: info.kurz || "", bild: info.bild || SPIEL.raeume[akt[0]].bild, raeume: akt, ziffer: r.ziffer });
+        akt = [];
+      }
+    });
+    return g;
+  })();
+  function gruppeVon(ri) {
+    for (var k = 0; k < GRUPPEN.length; k++) if (GRUPPEN[k].raeume.indexOf(ri) >= 0) return k;
+    return 0;
+  }
+
   function istGeloest(r) { return !!stand.geloest[r.id]; }
   function raumFertig(raum) { return raum.raetsel.every(istGeloest); }
   function raumOffen(i) { return testmodus || i === 0 || raumFertig(SPIEL.raeume[i - 1]); }
@@ -106,6 +125,7 @@
   function zeichnen() {
     var v = ansicht;
     if (v.name === "raeume") return zeigeRaeume();
+    if (v.name === "thema") return zeigeThema(v.g);
     if (v.name === "raum") return zeigeRaum(v.r);
     if (v.name === "raetsel") return zeigeRaetsel(v.r, v.x);
     if (v.name === "erfolg") return zeigeErfolg(v.r, v.x);
@@ -152,42 +172,86 @@
     return esc(w.slice(0, -1).join(" ")) + "<em>" + esc(w[w.length - 1]) + "</em>";
   }
 
+  var SIEGEL = '<span class="room-seal" aria-hidden="true"><svg viewBox="0 0 40 40"><path class="bg" d="M13 18v-4a7 7 0 0 1 14 0v4"/><rect x="9" y="18" width="22" height="16" rx="3"/><circle class="kh" cx="20" cy="26" r="2.5"/></svg></span>';
+
+  function gruppeOffen(g) { return raumOffen(GRUPPEN[g].raeume[0]); }
+  function gruppeFertig(g) { return GRUPPEN[g].raeume.every(function (ri) { return raumFertig(SPIEL.raeume[ri]); }); }
+
   function zeigeRaeume() {
     var a = anzahl();
     var html = kopf("Start", a.fertig + " / " + a.gesamt + " gelöst") +
-      '<header class="prose fade-in"><span class="eyebrow">Wählt einen Raum</span><h2>Eure Spur</h2></header>' +
+      '<header class="prose fade-in"><span class="eyebrow">Wählt ein Thema</span><h2>Eure Spur</h2></header>' +
       zifferPanel() +
       '<div class="rooms">';
-    SPIEL.raeume.forEach(function (raum, i) {
-      var offen = raumOffen(i);
-      var fertig = raumFertig(raum);
-      var n = raum.raetsel.filter(istGeloest).length;
-      var siegel = '<span class="room-seal" aria-hidden="true"><svg viewBox="0 0 40 40"><path class="bg" d="M13 18v-4a7 7 0 0 1 14 0v4"/><rect x="9" y="18" width="22" height="16" rx="3"/><circle class="kh" cx="20" cy="26" r="2.5"/></svg></span>';
-      html += '<button class="room' + (offen ? "" : " locked") + '" data-raum="' + i + '"' + (offen ? "" : ' aria-disabled="true"') + '>' +
-        (offen ? '<img src="' + esc(raum.bild) + '" alt="">' : siegel) +
-        '<span class="room-text">' + (raum.thema ? '<span class="room-theme">' + esc(raum.thema) + '</span>' : '') +
-          '<strong>' + (offen ? esc(raum.name) : "Geheimer Raum") + '</strong><span>' +
-          (offen ? esc(raum.kurz) : "Wartet auf euch") + '</span></span>' +
-        '<span class="badge' + (fertig ? " done" : offen ? "" : " sealed") + '">' + (fertig ? "Geschafft" : offen ? n + " / " + raum.raetsel.length : "Versiegelt") + '</span>' +
+    GRUPPEN.forEach(function (gr, g) {
+      var offen = gruppeOffen(g);
+      var fertig = gruppeFertig(g);
+      var n = gr.raeume.filter(function (ri) { return raumFertig(SPIEL.raeume[ri]); }).length;
+      html += '<button class="room theme' + (offen ? "" : " locked") + '" data-gruppe="' + g + '"' + (offen ? "" : ' aria-disabled="true"') + '>' +
+        (offen ? '<img src="' + esc(gr.bild) + '" alt="">' : SIEGEL) +
+        '<span class="room-text"><strong>' + esc(gr.name) + '</strong><span>' +
+          (offen ? esc(gr.kurz) : "Wartet auf euch") + '</span></span>' +
+        '<span class="badge' + (fertig ? " done" : offen ? "" : " sealed") + '">' +
+          (fertig ? "Geschafft" : offen ? n + " / " + gr.raeume.length + " Level" : "Versiegelt") + '</span>' +
       '</button>';
     });
     html += '</div>';
     if (a.fertig === a.gesamt) html += '<button class="btn" id="zumfinale">Zum Finale</button>';
+    app.innerHTML = html;
+    alle("[data-gruppe]", function (el) {
+      var g = +el.getAttribute("data-gruppe");
+      if (!gruppeOffen(g)) return;
+      el.addEventListener("click", function () { gehe({ name: "thema", g: g }); });
+    });
+    on("#zumfinale", function () { gehe({ name: "finale" }); });
+  }
+
+  function zeigeThema(g) {
+    var gr = GRUPPEN[g];
+    if (!gr) return gehe({ name: "raeume" }, true);
+    var fertig = gruppeFertig(g);
+    var html = kopf("Themen", "Thema " + (g + 1) + " von " + GRUPPEN.length) +
+      '<header class="prose fade-in"><span class="eyebrow">Thema ' + (g + 1) + '</span><h2>' + esc(gr.name) + '</h2>' +
+      (gr.kurz ? '<p class="muted">' + esc(gr.kurz) + '</p>' : '') + '</header>' +
+      '<div class="rooms">';
+    gr.raeume.forEach(function (ri, k) {
+      var raum = SPIEL.raeume[ri];
+      var offen = raumOffen(ri);
+      var rf = raumFertig(raum);
+      var n = raum.raetsel.filter(istGeloest).length;
+      html += '<button class="room' + (offen ? "" : " locked") + '" data-raum="' + ri + '"' + (offen ? "" : ' aria-disabled="true"') + '>' +
+        (offen ? '<img src="' + esc(raum.bild) + '" alt="">' : SIEGEL) +
+        '<span class="room-text"><span class="room-theme">Level ' + (k + 1) + '</span>' +
+          '<strong>' + (offen ? esc(raum.name) : "Geheimer Raum") + '</strong><span>' +
+          (offen ? esc(raum.kurz) : "Wartet auf euch") + '</span></span>' +
+        '<span class="badge' + (rf ? " done" : offen ? "" : " sealed") + '">' + (rf ? "Geschafft" : offen ? n + " / " + raum.raetsel.length : "Versiegelt") + '</span>' +
+      '</button>';
+    });
+    html += '</div>';
+    if (fertig && gr.ziffer) {
+      html += '<div class="reward"><span class="eyebrow">Ziffer für ' + esc(gr.ziffer.thema) + '</span><strong>' + esc(gr.ziffer.wert) + '</strong></div>';
+    }
+    if (fertig) {
+      var naechste = g + 1 < GRUPPEN.length;
+      html += '<button class="btn" id="weiter">' + (naechste ? "Weiter: " + esc(GRUPPEN[g + 1].name) : "Zur Übersicht") + '</button>';
+    }
     app.innerHTML = html;
     alle("[data-raum]", function (el) {
       var i = +el.getAttribute("data-raum");
       if (!raumOffen(i)) return;
       el.addEventListener("click", function () { gehe({ name: "raum", r: i }); });
     });
-    on("#zumfinale", function () { gehe({ name: "finale" }); });
+    on("#weiter", function () { gehe(g + 1 < GRUPPEN.length ? { name: "thema", g: g + 1 } : { name: "raeume" }); });
   }
 
   function zeigeRaum(ri) {
     var raum = SPIEL.raeume[ri];
     var naechstes = naechstesIndex(raum);
-    var html = kopf("Räume", "Raum " + (ri + 1) + " von " + SPIEL.raeume.length) +
+    var gr = GRUPPEN[gruppeVon(ri)];
+    var lvl = gr.raeume.indexOf(ri) + 1;
+    var html = kopf(gr.name, "Level " + lvl + " von " + gr.raeume.length) +
       bild(raum.bild, raum.name, true) +
-      '<header class="prose fade-in"><span class="eyebrow">Raum ' + (ri + 1) + '</span><h2>' + esc(raum.name) + '</h2>' +
+      '<header class="prose fade-in"><span class="eyebrow">' + esc(gr.name) + ' · Level ' + lvl + '</span><h2>' + esc(raum.name) + '</h2>' +
       absaetze(raum.intro) + '</header><div class="steps">';
     raum.raetsel.forEach(function (x, j) {
       var geloest = istGeloest(x);
@@ -202,7 +266,8 @@
     html += '</div>';
     if (naechstes === -1) {
       var letzter = ri === SPIEL.raeume.length - 1;
-      html += '<button class="btn" id="weiter">' + (letzter ? "Zum Finale" : "Weiter: " + esc(SPIEL.raeume[ri + 1].name)) + '</button>';
+      var wechsel = !letzter && gruppeVon(ri + 1) !== gruppeVon(ri);
+      html += '<button class="btn" id="weiter">' + (letzter ? "Zum Finale" : wechsel ? "Zurück zu " + esc(gr.name) : "Weiter: " + esc(SPIEL.raeume[ri + 1].name)) + '</button>';
     }
     app.innerHTML = html;
     alle("[data-x]", function (el) {
@@ -212,6 +277,7 @@
     });
     on("#weiter", function () {
       if (ri === SPIEL.raeume.length - 1) gehe({ name: "finale" });
+      else if (gruppeVon(ri + 1) !== gruppeVon(ri)) gehe({ name: "thema", g: gruppeVon(ri) });
       else gehe({ name: "raum", r: ri + 1 });
     });
     zoomAktivieren();
@@ -392,6 +458,7 @@
     var letzterRaum = ri === SPIEL.raeume.length - 1;
     var knopf, ziel;
     if (naechstes !== -1) { knopf = "Weiter"; ziel = { name: "raetsel", r: ri, x: naechstes }; }
+    else if (!letzterRaum && gruppeVon(ri + 1) !== gruppeVon(ri)) { knopf = "Weiter: " + GRUPPEN[gruppeVon(ri + 1)].name; ziel = { name: "thema", g: gruppeVon(ri + 1) }; }
     else if (!letzterRaum) { knopf = "Weiter: " + SPIEL.raeume[ri + 1].name; ziel = { name: "raum", r: ri + 1 }; }
     else { knopf = "Zum Finale"; ziel = { name: "finale" }; }
 
@@ -405,9 +472,9 @@
           '<div class="reward"><span class="eyebrow">Ziffer für ' + esc(raum.ziffer.thema) + '</span><strong>' + esc(raum.ziffer.wert) + '</strong><span class="muted">Merkt sie euch gut – ihr braucht sie ganz am Ende.</span></div>' : '') +
       '</section>' +
       '<div class="btn-row"><button class="btn" id="weiter">' + esc(knopf) + '</button>' +
-      '<button class="btn quiet" id="zurueck">Zur Raumübersicht</button></div>';
+      '<button class="btn quiet" id="zurueck">Zurück zu ' + esc(GRUPPEN[gruppeVon(ri)].name) + '</button></div>';
     on("#weiter", function () { gehe(ziel); });
-    on("#zurueck", function () { gehe({ name: "raeume" }); });
+    on("#zurueck", function () { gehe({ name: "thema", g: gruppeVon(ri) }); });
   }
 
   function zeigeFinale() {
@@ -457,7 +524,8 @@
     if (e.target.closest("[data-back]")) {
       var v = ansicht;
       if (v.name === "raetsel") gehe({ name: "raum", r: v.r });
-      else if (v.name === "raum") gehe({ name: "raeume" });
+      else if (v.name === "raum") gehe({ name: "thema", g: gruppeVon(v.r) });
+      else if (v.name === "thema") gehe({ name: "raeume" });
       else gehe({ name: "start" });
     }
   });

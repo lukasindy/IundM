@@ -35,6 +35,15 @@ window.SPIEL = {
     "Findet die Ringe, bevor die Trauung beginnt."
   ],
 
+  // Die vier Themen auf der Übersicht. Welche Räume zu einem Thema gehören, ergibt sich
+  // aus der Reihenfolge unten: Ein Thema endet mit dem Raum, der die "ziffer" vergibt.
+  themen: {
+    "Japan": { kurz: "Das Land der aufgehenden Sonne", bild: "bilder/samurai.svg" },
+    "Casino": { kurz: "Hohe Einsätze, kühle Köpfe", bild: "bilder/roulette.svg" },
+    "Therme": { kurz: "Warm, wärmer, Aufguss", bild: "bilder/therme.svg" },
+    "Brettspiele": { kurz: "Würfel, Schachteln und eine Bombe", bild: "bilder/regal.svg" }
+  },
+
   raeume: [
     // ======================= JAPAN =======================
     {
