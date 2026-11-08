@@ -110,7 +110,7 @@
     if (!mit.length) return "";
     return '<section class="digits" aria-label="Gesammelte Ziffern"><span class="eyebrow">Eure Ziffern</span><div class="digit-row">' +
       mit.map(function (r) {
-        var da = raumFertig(r);
+        var da = gruppeFertig(gruppeVon(SPIEL.raeume.indexOf(r)));  // erst wenn ALLE Level des Themas gelöst sind
         return '<div class="dslot' + (da ? " got" : "") + '"><strong>' + (da ? esc(r.ziffer.wert) : "?") + '</strong><span>' + esc(r.ziffer.thema) + '</span></div>';
       }).join("") + '</div></section>';
   }
@@ -468,7 +468,7 @@
         '<span class="eyebrow">' + (naechstes === -1 ? esc(raum.name) + " geschafft" : "Gelöst") + '</span>' +
         '<h2>' + esc(x.titel) + '</h2>' +
         '<p>' + esc(x.erfolg) + '</p>' +
-        (naechstes === -1 && raum.ziffer ?
+        (naechstes === -1 && raum.ziffer && gruppeFertig(gruppeVon(ri)) ?
           '<div class="reward"><span class="eyebrow">Ziffer für ' + esc(raum.ziffer.thema) + '</span><strong>' + esc(raum.ziffer.wert) + '</strong><span class="muted">Merkt sie euch gut – ihr braucht sie ganz am Ende.</span></div>' : '') +
       '</section>' +
       '<div class="btn-row"><button class="btn" id="weiter">' + esc(knopf) + '</button>' +
