@@ -45,6 +45,11 @@ body {
 img { max-width: 100%; display: block; }
 [hidden] { display: none !important; }
 button { font: inherit; color: inherit; }
+/* Kein Doppeltipp-Zoom, keine Textmarkierung beim schnellen Tippen */
+html, body, button, .pic, .room, .step, .choice, .wheel, .digit, .lock { touch-action: manipulation; }
+button, .digit, .lock, .room, .step, .choice, .tafel, .dslot, .endcode {
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+}
 
 #app {
   max-width: 520px;

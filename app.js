@@ -442,6 +442,21 @@
     }
   });
 
+  // iOS: Doppeltipp- und Pinch-Zoom verhindern (Rädchen schnell drücken soll nicht zoomen)
+  var letzterTipp = 0;
+  document.addEventListener("touchend", function (e) {
+    var jetzt = Date.now();
+    if (jetzt - letzterTipp < 350 && !e.target.closest("input, textarea")) {
+      e.preventDefault();               // kein Zoom …
+      var ziel = e.target.closest("button");
+      if (ziel && !ziel.disabled) ziel.click(); // … aber der Tipp zählt trotzdem
+    }
+    letzterTipp = jetzt;
+  }, { passive: false });
+  ["gesturestart", "gesturechange"].forEach(function (t) {
+    document.addEventListener(t, function (e) { e.preventDefault(); }, { passive: false });
+  });
+
   // Offline-Unterstützung (nur auf GitHub Pages / https)
   if ("serviceWorker" in navigator && location.protocol === "https:" && !/claude/.test(location.hostname)) {
     try { navigator.serviceWorker.register("sw.js").catch(function () {}); } catch (e) {}
