@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
+<rect width="800" height="500" fill="#5E6A62"/>
+<path d="M0 0h800v260H0z" fill="#B9CFD8"/>
+<path d="M0 220 L140 90 L260 200 L380 70 L520 210 L640 110 L800 230 V300 H0z" fill="#8FA3AE"/>
+<g fill="#FFFFFF"><path d="M120 108 L140 90 L160 108 L150 116 L140 108 L130 116z"/><path d="M360 88 L380 70 L400 88 L390 96 L380 88 L370 96z"/><path d="M620 128 L640 110 L660 128 L650 136 L640 128 L630 136z"/></g>
+<rect y="260" width="800" height="240" fill="#5E6A62"/>
+<path d="M90 470 Q60 360 200 330 Q400 300 600 330 Q740 350 710 470z" fill="#7A8580"/>
+<path d="M130 450 Q110 370 220 350 Q400 325 590 350 Q690 365 670 450z" fill="#7FB8B6"/>
+<g fill="#8E928C"><ellipse cx="120" cy="380" rx="40" ry="26"/><ellipse cx="690" cy="400" rx="44" ry="28"/><ellipse cx="400" cy="320" rx="50" ry="18"/></g>
+<g stroke="#FFFFFF" stroke-width="7" fill="none" stroke-linecap="round" opacity=".75"><path d="M260 330 q-18 -30 0 -60 q18 -30 0 -60"/><path d="M400 300 q-18 -30 0 -60 q18 -30 0 -60"/><path d="M540 330 q-18 -30 0 -60 q18 -30 0 -60"/></g>
+<g transform="translate(560 390)"><circle r="20" fill="#B9A08A"/><circle cy="-4" r="11" fill="#E8B9A6"/><circle cx="-4" cy="-6" r="2" fill="#22302A"/><circle cx="4" cy="-6" r="2" fill="#22302A"/></g>
+<g transform="translate(300 395)"><circle r="20" fill="#B9A08A"/><circle cy="-4" r="11" fill="#E8B9A6"/><circle cx="-4" cy="-6" r="2" fill="#22302A"/><circle cx="4" cy="-6" r="2" fill="#22302A"/><rect x="-14" y="-26" width="28" height="8" rx="3" fill="#FFFFFF"/></g>
+<g transform="translate(40 300)"><g stroke="#5E8A4E" stroke-width="10"><path d="M0 200V-40M30 200V-10M60 200V-60"/></g><g fill="#7EAA6A"><ellipse cx="14" cy="-30" rx="20" ry="7" transform="rotate(-30 14 -30)"/><ellipse cx="46" cy="-4" rx="20" ry="7" transform="rotate(30 46 -4)"/><ellipse cx="76" cy="-50" rx="20" ry="7" transform="rotate(-20 76 -50)"/></g></g>
+<g transform="translate(700 280)"><rect x="-40" y="-60" width="80" height="60" rx="6" fill="#6B4E3A"/><text y="-18" text-anchor="middle" font-size="40" fill="#F3EBDD" font-family="'DejaVu Sans', 'Segoe UI Symbol', sans-serif">♨</text><rect x="-4" y="0" width="8" height="40" fill="#6B4E3A"/></g>
+</svg>

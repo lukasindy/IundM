@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
+<rect width="800" height="500" fill="#E9DCC3"/>
+<rect y="0" width="800" height="300" fill="#E9DCC3"/>
+<g stroke="#7A5A40" stroke-width="10"><path d="M0 8h800M0 300h800M120 0v300M680 0v300"/></g>
+<g stroke="#B79F7E" stroke-width="3"><path d="M0 100h120M0 200h120M680 100h120M680 200h120"/></g>
+<rect y="300" width="800" height="200" fill="#CDBE8C"/><g stroke="#3B3328" stroke-width="5"><path d="M0 300h800M200 300v200M400 300v200M600 300v200M0 400h800"/></g>
+<rect x="330" y="30" width="140" height="230" fill="#F7F1E5" stroke="#7A5A40" stroke-width="4"/><rect x="320" y="24" width="160" height="10" rx="5" fill="#5A4030"/>
+<text x="400" y="110" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="64" fill="#22302A">武</text><text x="400" y="190" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="64" fill="#22302A">士</text><circle cx="400" cy="232" r="12" fill="#B83A30"/>
+<g transform="translate(220 0)"><rect x="-6" y="130" width="12" height="170" fill="#5A4030"/><path d="M-50 150 h100 l-10 90 h-80z" fill="#2B2B2B"/><g stroke="#B83A30" stroke-width="4"><path d="M-46 170h92M-44 190h88M-42 210h84M-40 230h80"/></g><path d="M-36 112 q36 -40 72 0 v22 h-72z" fill="#2B2B2B"/><path d="M-36 100 l-14 -40 22 26 M36 100 l14 -40 -22 26" stroke="#C9A45C" stroke-width="6" fill="none"/><rect x="-20" y="118" width="40" height="18" rx="4" fill="#5A4030"/></g>
+<rect x="520" y="120" width="140" height="180" rx="4" fill="#6B4E3A"/><path d="M590 120v180" stroke="#4A3528" stroke-width="3"/><rect x="574" y="200" width="32" height="26" rx="4" fill="#C9A45C"/><g fill="#FFFCFA"><rect x="578" y="205" width="5" height="14"/><rect x="585" y="205" width="5" height="14"/><rect x="592" y="205" width="5" height="14"/><rect x="599" y="205" width="5" height="14"/></g>
+<rect x="170" y="390" width="460" height="70" rx="6" fill="#8A6A4E"/>
+<ellipse cx="230" cy="420" rx="44" ry="20" fill="#9B2F2A"/><ellipse cx="230" cy="416" rx="36" ry="13" fill="#B83A30"/><text x="230" y="452" text-anchor="middle" font-size="18" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F3EBDD">1</text>
+<ellipse cx="345" cy="420" rx="44" ry="20" fill="#9B2F2A"/><ellipse cx="345" cy="416" rx="36" ry="13" fill="#B83A30"/><text x="345" y="452" text-anchor="middle" font-size="18" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F3EBDD">2</text>
+<ellipse cx="460" cy="420" rx="44" ry="20" fill="#9B2F2A"/><ellipse cx="460" cy="416" rx="36" ry="13" fill="#B83A30"/><text x="460" y="452" text-anchor="middle" font-size="18" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F3EBDD">3</text>
+<ellipse cx="575" cy="420" rx="44" ry="20" fill="#9B2F2A"/><ellipse cx="575" cy="416" rx="36" ry="13" fill="#B83A30"/><text x="575" y="452" text-anchor="middle" font-size="18" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F3EBDD">4</text>
+</svg>

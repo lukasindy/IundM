@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
+<rect width="800" height="500" fill="#2F3A36"/>
+<text x="400" y="70" text-anchor="middle" font-size="30" font-style="italic" fill="#F3EBDD">Das Förderband</text>
+<rect x="0" y="200" width="800" height="120" fill="#9AA3A0"/><g stroke="#7E8784" stroke-width="3"><path d="M0 214h800M0 306h800"/></g>
+<g fill="#7E8784"><rect x="10" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="90" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="170" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="250" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="330" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="410" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="490" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="570" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="650" y="252" width="40" height="16" rx="3" opacity=".35"/><rect x="730" y="252" width="40" height="16" rx="3" opacity=".35"/></g>
+<path d="M720 380 h-640" stroke="#F3EBDD" stroke-width="3" opacity=".6"/><path d="M720 380 l-14 -8 v16z" fill="#F3EBDD" opacity=".6"/>
+<ellipse cx="58" cy="268" rx="44" ry="20" fill="#3E8A5A"/><ellipse cx="58" cy="264" rx="34" ry="13" fill="#FFFCFA"/>
+<rect x="28" y="140" width="60" height="44" rx="6" fill="#FFFCFA"/><text x="58" y="173" text-anchor="middle" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#22302A">3</text><path d="M58 184 v64" stroke="#FFFCFA" stroke-width="2" opacity=".6"/>
+<ellipse cx="156" cy="268" rx="44" ry="20" fill="#2E6FB0"/><ellipse cx="156" cy="264" rx="34" ry="13" fill="#FFFCFA"/>
+<rect x="126" y="140" width="60" height="44" rx="6" fill="#FFFCFA"/><text x="156" y="173" text-anchor="middle" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#22302A">4</text><path d="M156 184 v64" stroke="#FFFCFA" stroke-width="2" opacity=".6"/>
+<ellipse cx="254" cy="268" rx="44" ry="20" fill="#B83A30"/><ellipse cx="254" cy="264" rx="34" ry="13" fill="#FFFCFA"/>
+<rect x="224" y="140" width="60" height="44" rx="6" fill="#FFFCFA"/><text x="254" y="173" text-anchor="middle" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#22302A">7</text><path d="M254 184 v64" stroke="#FFFCFA" stroke-width="2" opacity=".6"/>
+<ellipse cx="352" cy="268" rx="44" ry="20" fill="#C9A45C"/><ellipse cx="352" cy="264" rx="34" ry="13" fill="#FFFCFA"/>
+<rect x="322" y="140" width="60" height="44" rx="6" fill="#FFFCFA"/><text x="352" y="173" text-anchor="middle" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#22302A">11</text><path d="M352 184 v64" stroke="#FFFCFA" stroke-width="2" opacity=".6"/>
+<ellipse cx="450" cy="268" rx="44" ry="20" fill="#3E8A5A"/><ellipse cx="450" cy="264" rx="34" ry="13" fill="#FFFCFA"/>
+<rect x="420" y="140" width="60" height="44" rx="6" fill="#FFFCFA"/><text x="450" y="173" text-anchor="middle" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#22302A">18</text><path d="M450 184 v64" stroke="#FFFCFA" stroke-width="2" opacity=".6"/>
+<ellipse cx="548" cy="262" rx="42" ry="20" fill="none" stroke="#F3EBDD" stroke-width="3" stroke-dasharray="8 6"/><text x="548" y="276" text-anchor="middle" font-size="40" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F3EBDD">?</text>
+<ellipse cx="646" cy="262" rx="42" ry="20" fill="none" stroke="#F3EBDD" stroke-width="3" stroke-dasharray="8 6"/><text x="646" y="276" text-anchor="middle" font-size="40" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F3EBDD">?</text>
+<ellipse cx="744" cy="268" rx="44" ry="20" fill="#C9A45C"/><ellipse cx="744" cy="264" rx="34" ry="13" fill="#FFFCFA"/>
+<rect x="714" y="140" width="60" height="44" rx="6" fill="#FFFCFA"/><text x="744" y="173" text-anchor="middle" font-size="30" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#22302A">76</text><path d="M744 184 v64" stroke="#FFFCFA" stroke-width="2" opacity=".6"/>
+</svg>

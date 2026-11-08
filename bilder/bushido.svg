@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
+<rect width="800" height="500" fill="#2B2622"/>
+<rect x="40" y="18" width="380" height="464" fill="#F7F1E5" stroke="#7A5A40" stroke-width="5"/>
+<rect x="28" y="10" width="404" height="12" rx="6" fill="#5A4030"/>
+<text x="230" y="62" text-anchor="middle" font-size="28" font-style="italic" fill="#22302A">Die Tugenden des Bushido</text>
+<path d="M110 78h240" stroke="#B83A30" stroke-width="2"/>
+<text x="120" y="124" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="34" fill="#22302A">義</text><text x="190" y="122" font-size="26" fill="#22302A">Gerechtigkeit</text>
+<text x="120" y="176" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="34" fill="#22302A">勇</text><text x="190" y="174" font-size="26" fill="#22302A">Mut</text>
+<text x="120" y="228" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="34" fill="#22302A">仁</text><text x="190" y="226" font-size="26" fill="#22302A">Güte</text>
+<text x="120" y="280" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="34" fill="#22302A">礼</text><text x="190" y="278" font-size="26" fill="#22302A">Respekt</text>
+<text x="120" y="332" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="34" fill="#22302A">誠</text><text x="190" y="330" font-size="26" fill="#22302A">Aufrichtigkeit</text>
+<text x="120" y="384" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="34" fill="#22302A">名誉</text><text x="190" y="382" font-size="26" fill="#22302A">Ehre</text>
+<text x="120" y="436" text-anchor="middle" font-family="'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif CJK JP', 'Noto Serif JP', serif" font-size="34" fill="#22302A">忠義</text><text x="190" y="434" font-size="26" fill="#22302A">Treue</text>
+<g transform="rotate(-12 610 250)"><path d="M470 250 L760 236 Q780 240 760 250 L470 262z" fill="#D9DEE2" stroke="#8A949C" stroke-width="2"/><path d="M480 254 L758 242" stroke="#FFFFFF" stroke-width="2" opacity=".8"/><rect x="456" y="236" width="16" height="40" rx="3" fill="#C9A45C"/><rect x="380" y="248" width="78" height="16" rx="6" fill="#22302A"/><g stroke="#C9A45C" stroke-width="2"><path d="M392 248l8 16M408 248l8 16M424 248l8 16M440 248l8 16"/></g><text x="610" y="254" text-anchor="middle" font-size="20" font-family="Helvetica, Arial, sans-serif" font-weight="bold" letter-spacing="6" fill="#3B4248">ALLOHBZ</text></g>
+</svg>

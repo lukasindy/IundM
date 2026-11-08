@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
+<rect width="800" height="500" fill="#5A4030"/>
+<rect x="60" y="40" width="680" height="420" rx="10" fill="#22302A" stroke="#8A6A4E" stroke-width="14"/>
+<text x="400" y="100" text-anchor="middle" font-size="36" font-style="italic" fill="#F3EBDD">Tellerpreise</text>
+<path d="M250 120h300" stroke="#F3EBDD" stroke-width="2" opacity=".4"/>
+<ellipse cx="190" cy="170" rx="48" ry="20" fill="#3E8A5A"/><ellipse cx="190" cy="167" rx="36" ry="13" fill="#FFFCFA"/>
+<text x="270" y="182" font-size="34" fill="#F3EBDD">Grün</text><path d="M390 170h170" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 9" opacity=".5"/><text x="660" y="182" text-anchor="end" font-size="38" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F2D488">2 €</text>
+<ellipse cx="190" cy="245" rx="48" ry="20" fill="#2E6FB0"/><ellipse cx="190" cy="242" rx="36" ry="13" fill="#FFFCFA"/>
+<text x="270" y="257" font-size="34" fill="#F3EBDD">Blau</text><path d="M390 245h170" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 9" opacity=".5"/><text x="660" y="257" text-anchor="end" font-size="38" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F2D488">3 €</text>
+<ellipse cx="190" cy="320" rx="48" ry="20" fill="#B83A30"/><ellipse cx="190" cy="317" rx="36" ry="13" fill="#FFFCFA"/>
+<text x="270" y="332" font-size="34" fill="#F3EBDD">Rot</text><path d="M390 320h170" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 9" opacity=".5"/><text x="660" y="332" text-anchor="end" font-size="38" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F2D488">5 €</text>
+<ellipse cx="190" cy="395" rx="48" ry="20" fill="#C9A45C"/><ellipse cx="190" cy="392" rx="36" ry="13" fill="#FFFCFA"/>
+<text x="270" y="407" font-size="34" fill="#F3EBDD">Gold</text><path d="M390 395h170" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 9" opacity=".5"/><text x="660" y="407" text-anchor="end" font-size="38" font-family="Helvetica, Arial, sans-serif" font-weight="bold" fill="#F2D488">7 €</text>
+</svg>
