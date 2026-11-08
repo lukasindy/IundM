@@ -18,6 +18,20 @@
   }
   function speichern() { try { localStorage.setItem(SPEICHER_KEY, JSON.stringify(stand)); } catch (e) {} }
 
+  // ---------- Testmodus (zeigt bei jedem Rätsel die Lösung) ----------
+  var TEST_KEY = SPEICHER_KEY + "-testmodus";
+  var testmodus = false;
+  try { testmodus = localStorage.getItem(TEST_KEY) === "1"; } catch (e) {}
+  function setzeTestmodus(an) {
+    testmodus = an;
+    try { an ? localStorage.setItem(TEST_KEY, "1") : localStorage.removeItem(TEST_KEY); } catch (e) {}
+  }
+  function loesungText(x) {
+    if (x.typ === "reihenfolge") return x.karten.map(function (k, i) { return (i + 1) + ". " + k; }).join("  ·  ");
+    if (x.typ === "text") return x.loesung[0].charAt(0).toUpperCase() + x.loesung[0].slice(1);
+    return String(x.loesung);
+  }
+
   function istGeloest(r) { return !!stand.geloest[r.id]; }
   function raumFertig(raum) { return raum.raetsel.every(istGeloest); }
   function raumOffen(i) { return i === 0 || raumFertig(SPIEL.raeume[i - 1]); }
@@ -116,6 +130,9 @@
           '<p class="muted" style="text-align:center">Wirklich den ganzen Fortschritt löschen?</p>' +
           '<button class="btn secondary" id="reset-ja">Ja, alles löschen</button>' +
         '</div>' +
+        '<button class="test-toggle' + (testmodus ? " an" : "") + '" id="testmodus" aria-pressed="' + testmodus + '">' +
+          '<span class="test-dot"></span>Testmodus: ' + (testmodus ? "an – Lösungen werden angezeigt" : "aus") +
+        '</button>' +
       '</div>';
     on("#los", function () {
       if (!stand.start) { stand.start = Date.now(); speichern(); }
@@ -123,6 +140,7 @@
     });
     on("#reset", function () { document.getElementById("reset-frage").hidden = false; this.hidden = true; });
     on("#reset-ja", function () { stand = leererStand(); speichern(); zeichnen(); });
+    on("#testmodus", function () { setzeTestmodus(!testmodus); zeichnen(); });
   }
   function titelSchoen(t) {
     // "Iris & Michi" -> Et-Zeichen kursiv und farbig; sonst das letzte Wort kursiv in eigener Zeile
@@ -219,6 +237,7 @@
     if (geloest) {
       html += '<p class="hint"><b>Gelöst</b>' + esc(x.erfolg) + '</p>';
     } else {
+      if (testmodus) html += '<p class="test-loesung"><b>Testmodus · Lösung</b>' + esc(loesungText(x)) + '</p>';
       html += eingabe(x) + '<p class="feedback" id="feedback" role="status"></p>';
     }
     html += '</section>';
@@ -247,8 +266,7 @@
     }
   }
   function tippHtml(x, t) {
-    var letzter = t === x.tipps.length - 1;
-    return '<div class="hint fade-in"><b>' + (letzter ? "Lösung" : "Tipp " + (t + 1)) + '</b>' + esc(x.tipps[t]) + '</div>';
+    return '<div class="hint fade-in"><b>Tipp ' + (t + 1) + '</b>' + esc(x.tipps[t]) + '</div>';
   }
 
   function eingabe(x) {

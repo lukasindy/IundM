@@ -11,7 +11,9 @@ Ein Hochzeits-Escape-Room fürs Handy. Onkel Ferdi hat die Ringe versteckt, und 
 
 Nach jedem Thema gibt es eine Ziffer. Am Ende zeigt die App alle vier in der richtigen Reihenfolge – das ist der Code für euer **echtes Zahlenschloss** (aktuell `7392`).
 
-16 Rätsel, je 3 Tipps, Spielstand wird am Handy gespeichert. Läuft auf **iOS und Android**, gehostet über **GitHub Pages**.
+16 Rätsel, je 3 Tipps (die nur in die richtige Richtung deuten), Spielstand wird am Handy gespeichert.
+
+**Testmodus:** Auf der Startseite unten „Testmodus“ antippen – dann steht bei jedem Rätsel die Lösung dabei. Vor dem echten Spiel wieder ausschalten! Läuft auf **iOS und Android**, gehostet über **GitHub Pages**.
 
 ## Online
 

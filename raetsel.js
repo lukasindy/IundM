@@ -61,9 +61,9 @@ window.SPIEL = {
           frage: "Öffnet das Schloss an der Laterne.",
           loesung: "3815",
           tipps: [
-            "Übersetzt jedes Zeichen mit der Schriftrolle in eine Zahl.",
-            "Von links nach rechts steht da 5 – 1 – 8 – 3. Jetzt umdrehen.",
-            "Von rechts nach links: 3815."
+            "Auf Ferdis Zettel steht, welches Zeichen für welche Zahl steht.",
+            "Übersetzt jedes Täfelchen einzeln – ein Strich ist zum Beispiel die 1.",
+            "Habt ihr vier Zahlen? Denkt daran, wie Ferdi heute liest – das Täfelchen ganz rechts kommt zuerst."
           ],
           erfolg: "Das Schloss springt auf. In der Laterne liegen drei zusammengerollte Gedichte."
         },
@@ -94,9 +94,9 @@ window.SPIEL = {
           optionen: ["Haiku 1", "Haiku 2", "Haiku 3"],
           loesung: "Haiku 2",
           tipps: [
-            "Klatscht die Silben mit: »Kirsch-blü-ten im Wind« sind fünf.",
-            "Haiku 1 hat in der zweiten Zeile acht Silben, Haiku 3 in der ersten sechs.",
-            "Haiku 2 ist das richtige."
+            "Zählt die Silben jeder Zeile, am besten durch Mitklatschen.",
+            "Ein Haiku braucht genau 5 – 7 – 5. Eine einzige Zeile mit einer Silbe zu viel oder zu wenig, und es scheidet aus.",
+            "Achtet besonders auf die zweite Zeile von Haiku 1 und die erste Zeile von Haiku 3."
           ],
           erfolg: "Unter dem Moos neben der Laterne liegt ein Schlüssel mit einem Anhänger: »Teehaus«."
         }
@@ -130,9 +130,9 @@ window.SPIEL = {
           optionen: ["Winkekatze", "Daruma", "Kokeshi-Puppe", "Tanuki"],
           loesung: "Daruma",
           tipps: [
-            "Seht euch die Figuren an: Eine von ihnen hat leere, weiße Augen.",
-            "Es ist die runde, rote Figur ohne Arme und Beine.",
-            "Die Lösung ist: Daruma."
+            "Schaut euch die Augen der Figuren im Bild genau an.",
+            "Gesucht ist eine Figur, deren Augen noch leer und weiß sind.",
+            "Dieser japanische Glücksbringer steht immer wieder auf, wenn man ihn umstößt – rund und meistens rot."
           ],
           erfolg: "Der Daruma ist hohl. Darin steckt eine Anleitung für eine Teezeremonie – mit vertauschten Schritten."
         },
@@ -153,9 +153,9 @@ window.SPIEL = {
             "Schale drehen und dem Gast reichen"
           ],
           tipps: [
-            "Ferdis Merkspruch ist die Reihenfolge: warm – grün – nass – Schaum – Gast.",
-            "Grün ist das Matcha-Pulver, nass das heiße Wasser.",
-            "Anwärmen – Pulver – Wasser – Schlagen – Reichen."
+            "Ferdis Merkspruch ist eure Anleitung: warm – grün – nass – Schaum – Gast.",
+            "»Grün« steht für das Matcha-Pulver, »nass« für das Aufgießen.",
+            "Ordnet jede Karte einem Wort aus dem Merkspruch zu – dann ergibt sich die Reihenfolge von selbst."
           ],
           erfolg: "Auf dem Boden der Teeschale klebt ein Spielchip: »Roulette – 1. Stock«."
         }
@@ -187,9 +187,9 @@ window.SPIEL = {
           frage: "Stellt die Zahl am Schloss ein.",
           loesung: "12",
           tipps: [
-            "Das erste Dutzend sind die Zahlen 1 bis 12.",
-            "Schaut im Bild, welche geraden Zahlen von 1 bis 12 rot sind.",
-            "Nur die 12 ist rot und gerade."
+            "»Erstes Dutzend« meint die Zahlen 1 bis 12.",
+            "Streicht im Bild alle schwarzen und alle ungeraden Zahlen.",
+            "Schaut euch die oberste Reihe des Tisches ganz genau an."
           ],
           erfolg: "Klick! In der Kassette liegt ein Stapel Jetons und eine Notiz."
         },
@@ -206,9 +206,9 @@ window.SPIEL = {
           frage: "Wie viel ist Ferdis Einsatz wert?",
           loesung: "244",
           tipps: [
-            "Zählt erst, wie viele Jetons jeder Farbe es gibt.",
-            "2 schwarze, 1 grüner, 3 rote und 4 weiße.",
-            "200 + 25 + 15 + 4 = 244."
+            "Zählt zuerst, wie viele Jetons es von jeder Farbe gibt.",
+            "Nehmt die Anzahl jeder Farbe mal ihren Wert vom Schild – und zählt am Ende alles zusammen.",
+            "Die weißen Jetons sind zwar nur 1 wert, aber es liegen mehr davon herum, als man auf den ersten Blick sieht."
           ],
           erfolg: "Die Kasse öffnet sich. Darin liegt eine Spielkarte, ein Pik-Ass. Auf der Rückseite: »Pokertisch«."
         }
@@ -239,9 +239,9 @@ window.SPIEL = {
           optionen: ["Bar", "Tresor", "Spielautomat"],
           loesung: "Spielautomat",
           tipps: [
-            "Die Bar hat eine Straße, der Tresor einen Flush (fünf Herz). Was hat der Spielautomat?",
-            "Drei Damen und zwei Vierer sind ein Full House.",
-            "Full House schlägt Flush und Straße: Spielautomat."
+            "Bestimmt für jede Hand, was sie hat: Paar, Drilling, Straße, Flush …?",
+            "Die Bar hat eine Straße, der Tresor einen Flush. Was hat die dritte Hand?",
+            "Beim Poker gilt: Full House schlägt Flush, und Flush schlägt Straße."
           ],
           erfolg: "Am Spielautomaten klebt ein Zettel: »Ein Code, und ich zahle aus.«"
         },
@@ -258,9 +258,9 @@ window.SPIEL = {
           frage: "Gebt den Code am Automaten ein.",
           loesung: "537",
           tipps: [
-            "Die Gewinntabelle oben verrät, welche Zahl zu welchem Bild gehört.",
-            "Die Walzen zeigen Glocke, Kirsche, Sieben.",
-            "Glocke 5, Kirsche 3, Sieben 7: 537."
+            "Oben auf dem Automaten hängt eine Gewinntabelle.",
+            "Jedes Bild auf den Walzen hat in der Tabelle eine Zahl.",
+            "Lest die Walzen von links nach rechts – nicht jedes Bild aus der Tabelle kommt auf den Walzen vor."
           ],
           erfolg: "Der Automat rattert und spuckt ein Armband aus: »Therme – Eintritt frei«."
         }
@@ -293,9 +293,9 @@ window.SPIEL = {
           optionen: ["Whirlpool", "Solebecken", "Außenbecken", "Sportbecken"],
           loesung: "Solebecken",
           tipps: [
+            "Schaut auf die Temperaturschilder an den Becken.",
             "Streicht das wärmste und das kälteste Becken.",
-            "Übrig bleiben 36 °C und 32 °C. Welches ist mindestens 34 °C warm?",
-            "Das Solebecken mit 36 °C."
+            "Von den beiden übrigen ist nur eines warm genug für Ferdi."
           ],
           erfolg: "Am Grund liegt ein Spindschlüssel. Die Nummer auf dem Anhänger ist leider abgerieben."
         },
@@ -311,9 +311,9 @@ window.SPIEL = {
           frage: "Welche Nummer hat Ferdis Spind?",
           loesung: "23",
           tipps: [
-            "Schaut, wie die Nummern von Spalte zu Spalte und von Reihe zu Reihe wachsen.",
-            "In jeder Reihe geht es um 1 weiter, nach unten um 6.",
-            "Rechts neben der 22 und über der 29: Spind 23."
+            "Die Nummern folgen einem Muster – schaut, wie sie von links nach rechts wachsen.",
+            "Und wie verändern sie sich von einer Reihe zur nächsten?",
+            "Das Handtuch hängt in der mittleren Reihe. Welche Nummern stehen direkt daneben, darüber und darunter?"
           ],
           erfolg: "Im Spind liegt ein Saunatuch mit einer Stickerei: »Bis gleich in der Sauna«."
         }
@@ -348,9 +348,9 @@ window.SPIEL = {
             "Ausruhen"
           ],
           tipps: [
-            "Bevor man die Sauna betritt, wäscht man sich.",
-            "Trocken schwitzt man besser – und nach dem Schwitzen kommt die Abkühlung.",
-            "Duschen – Abtrocknen – Schwitzen – Abkühlen – Ausruhen."
+            "Wer in die Sauna geht, sollte vorher sauber sein.",
+            "Nass schwitzt man schlechter als trocken.",
+            "Nach der Hitze braucht der Körper zuerst Abkühlung und dann Ruhe."
           ],
           erfolg: "Ferdis nächster Zettel steckt hinter der Tafel mit dem Aufgussplan."
         },
@@ -367,9 +367,9 @@ window.SPIEL = {
           frage: "Stellt die Uhrzeit ein (Stunden und Minuten).",
           loesung: "1630",
           tipps: [
+            "Lest Ferdis Zettel genau: Sein Lieblingsduft ist kein Baum und keine Frucht.",
             "Birke und Zirbe sind Bäume, die Orange ist eine Frucht.",
-            "Übrig bleibt die Minze. Wann ist dieser Aufguss?",
-            "Um 16:30 Uhr: 1630."
+            "Gebt die Uhrzeit ohne Doppelpunkt ein: erst die Stunden, dann die Minuten."
           ],
           erfolg: "Im Kasten des Saunameisters liegt ein Spielwürfel mit einem Zettel: »Spielezimmer, 2. Stock«."
         }
@@ -400,9 +400,9 @@ window.SPIEL = {
           frage: "Öffnet die Spieleschachtel.",
           loesung: "152",
           tipps: [
-            "Bei jedem normalen Würfel ergeben gegenüberliegende Seiten zusammen 7.",
-            "Oben liegen 6, 2 und 5. Was liegt jeweils unten?",
-            "7 − 6 = 1, 7 − 2 = 5, 7 − 5 = 2: 152."
+            "Ihr seht nur die Oberseiten. Gesucht sind die Seiten, die auf dem Tisch liegen.",
+            "Bei jedem normalen Würfel ergeben gegenüberliegende Seiten zusammen immer dieselbe Zahl.",
+            "Diese Zahl ist bei allen Würfeln gleich – schaut euch einen echten Würfel an, wenn ihr unsicher seid."
           ],
           erfolg: "In der Schachtel liegt eine Karte: »Nur wer steht, zählt. Seht ins Regal.«"
         },
@@ -420,9 +420,9 @@ window.SPIEL = {
           platzhalter: "Wort eintippen",
           loesung: ["bomb", "bomb busters", "bombbusters"],
           tipps: [
-            "Liegende Schachteln zählen nicht.",
-            "Aufrecht stehen Backgammon, Oware, Mühle und Bingo.",
-            "B-O-M-B: Bomb."
+            "Manche Schachteln stehen, manche liegen. Nur die stehenden zählen.",
+            "Lest die Anfangsbuchstaben der stehenden Spiele von links nach rechts.",
+            "Das Wort ist englisch – und erinnert an ein Spiel, das Iris & Michi gerne spielen."
           ],
           erfolg: "Bomb! Hinter dem Regal ist eine Tür mit der Aufschrift »Bomb Busters – Entschärfungsteam«."
         }
@@ -454,9 +454,9 @@ window.SPIEL = {
           frage: "Welche Werte haben die verdeckten Kabel?",
           loesung: "25",
           tipps: [
-            "Die sichtbaren Kabel sind 1, 4 und 9. Zusammen sind das 14 – es fehlen also noch 7.",
-            "Das erste verdeckte Kabel liegt zwischen 1 und 4, das zweite zwischen 4 und 9.",
-            "Nur 2 + 5 passt: Der Code ist 25."
+            "Zählt die sichtbaren Kabel zusammen. Wie viel fehlt noch bis 21?",
+            "Die Kabel sind aufsteigend sortiert: Jedes verdeckte Kabel muss größer als sein linker und kleiner als sein rechter Nachbar sein.",
+            "Kein Wert kommt doppelt vor. Probiert aus, welche zwei Zahlen in die Lücken passen und zusammen die fehlende Summe ergeben."
           ],
           erfolg: "Der Zünder stockt. Ein zweiter Ständer klappt auf – mit einem roten Warnlicht."
         },
@@ -474,9 +474,9 @@ window.SPIEL = {
           optionen: ["Kabel B", "Kabel D", "Kabel E"],
           loesung: "Kabel E",
           tipps: [
-            "Kabel B liegt zwischen der 2 und der 4. Kann dort die 4,5 oder die 6 liegen?",
-            "Also liegen die 4,5 und die 6 auf D und E – aber in welcher Reihenfolge?",
-            "4,5 ist kleiner als 6, also ist D rot und E die blaue 6."
+            "Die Kabel liegen aufsteigend sortiert. Welche Werte können zwischen der 2 und der 4 liegen?",
+            "Weder die 4,5 noch die 6 passen auf Kabel B.",
+            "Auf D und E liegen also die 4,5 und die 6 – in welcher Reihenfolge, verrät euch die Sortierung."
           ],
           erfolg: "Schnipp. Der Zünder bleibt stehen, das Licht wird grün. Die Bombe ist entschärft!"
         }

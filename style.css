@@ -264,6 +264,21 @@ p { margin: 0; }
 }
 .endcode span { font-size: 0.68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--gold); overflow-wrap: anywhere; text-align: center; }
 
+/* Testmodus */
+.test-toggle {
+  align-self: center; display: inline-flex; align-items: center; gap: 8px; margin-top: 8px;
+  background: none; border: 1px dashed var(--line); border-radius: 999px; padding: 8px 14px;
+  font-size: 0.8rem; color: var(--muted); cursor: pointer;
+}
+.test-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--line); }
+.test-toggle.an { border-color: var(--bad); color: var(--bad); }
+.test-toggle.an .test-dot { background: var(--bad); }
+.test-loesung {
+  padding: 10px 14px; border-radius: 10px; border: 1.5px solid var(--bad); color: var(--ink);
+  font-weight: 600; font-variant-numeric: lining-nums;
+}
+.test-loesung b { display: block; color: var(--bad); font-size: 0.72rem; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 2px; }
+
 /* Lightbox */
 .lightbox {
   position: fixed; inset: 0; z-index: 50; background: rgba(15, 20, 18, .94); display: flex; flex-direction: column;
