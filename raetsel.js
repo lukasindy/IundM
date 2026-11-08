@@ -31,8 +31,8 @@ window.SPIEL = {
   startBild: "bilder/titel.svg",
   startText: [
     "Liebe Iris, lieber Michi – herzlichen Glückwunsch zu eurer kirchlichen Hochzeit!",
-    "Sophie und Lukas haben euch ein ganz besonderes Geschenk besorgt und es mit einem Zahlenschloss gesichert. Dann haben beide den Code verlegt. Zum Glück hat Lukas ihn vorher in einer Reihe von Rätseln versteckt, die nur ihr zwei lösen könnt. Wohin sie euch führen, verraten wir noch nicht.",
-    "Das Problem: Lukas weiß die Lösungen selbst nicht mehr. Ein bisschen helfen kann Sophie euch aber. Lukas’ Notizen und ein paar Kommentare von Bernhard, eurem zweiten Trauzeugen, haben sie euch hinterlassen. Den Rest müsst ihr selbst knacken.",
+    "Sophie und Lukas haben euch ein ganz besonderes Geschenk besorgt und es mit einem Zahlenschloss gesichert. Doch leider haben die zwei den Code verlegt. Zum Glück wurden die Ziffern vorher in Rätseln versteckt – und die könnt nur ihr zwei lösen.",
+    "Eure Trauzeugen Sophie und Bernhard helfen euch auf dieser Reise, so gut es geht. Den Rest müsst ihr selbst knacken.",
     "Unterwegs findet ihr vier Ziffern. Mit allen vier öffnet ihr euer Geschenk. Viel Glück!"
   ],
 
@@ -54,7 +54,7 @@ window.SPIEL = {
       kurz: "Ehre, Klinge, Disziplin",
       bild: "bilder/samurai.svg",
       intro: [
-        "Lukas’ erste Notiz führt euch in ein Dojo: Tatami-Matten, eine Rüstung in der Ecke und an der Wand ein großes Banner.",
+        "Die erste Notiz führt euch in ein Dojo: Tatami-Matten, eine Rüstung in der Ecke und an der Wand ein großes Banner.",
         "Vor einem verschlossenen Waffenschrank liegt ein Holzbrett mit vier leeren Sitzkissen, nummeriert von 1 bis 4 – von links nach rechts. Bernhard hat dazugeschrieben: »Hier standen vier Samurai-Figuren. Ich hab sie beim Putzen weggeräumt. Sorry.«"
       ],
       raetsel: [
@@ -72,7 +72,7 @@ window.SPIEL = {
             "6. Kenji trug das Katana.",
             "7. Das grüne Wappen lag auf Platz 1.",
             "8. Taro hat nie einen Speer angefasst.",
-            "Der Code für den Waffenschrank: die Platznummer von Kenji, dann von Hiro, dann von Taro, dann von Yuki.« – L."
+            "Der Code für den Waffenschrank: die Platznummer von Kenji, dann von Hiro, dann von Taro, dann von Yuki.« – B."
           ],
           frage: "Öffnet den Waffenschrank.",
           loesung: "1324",
@@ -91,7 +91,7 @@ window.SPIEL = {
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
             "Auf der Klinge steht: YJJMFZX",
-            "Lukas’ Notiz dazu: »Nicht jede Tugend durfte mitmachen. Nur die Tugenden, die mit einem einzigen Schriftzeichen geschrieben werden, haben jeden Buchstaben um je einen Schritt im Alphabet nach vorne geschoben. Schiebt sie zurück.«"
+            "Sophies Notiz dazu: »Nicht jede Tugend durfte mitmachen. Nur die Tugenden, die mit einem einzigen Schriftzeichen geschrieben werden, haben jeden Buchstaben um je einen Schritt im Alphabet nach vorne geschoben. Schiebt sie zurück.«"
           ],
           frage: "Was steht wirklich auf der Klinge?",
           platzhalter: "Wort eintippen",
@@ -101,7 +101,7 @@ window.SPIEL = {
             "Zählt nur die Tugenden mit genau einem Zeichen. So viele Schritte wurde jeder Buchstabe nach vorne geschoben.",
             "Geht im Alphabet genauso viele Schritte zurück – vor dem A kommt rückwärts wieder das Z."
           ],
-          erfolg: "Das Teehaus! Sophie hat unter die Gravur gekritzelt: »Ich hätte auf Karaoke getippt.«"
+          erfolg: "Das Teehaus! Bernhard hat unter die Gravur gekritzelt: »Ich hätte auf Karaoke getippt.«"
         }
       ]
     },
@@ -113,7 +113,7 @@ window.SPIEL = {
       bild: "bilder/teehaus.svg",
       intro: [
         "Das Teehaus hat Schiebetüren aus Papier und Tatami-Matten. Schuhe bleiben draußen.",
-        "Auf einem niedrigen Regal stehen vier Glücksbringer: eine Winkekatze, ein Daruma, eine Kokeshi-Puppe und ein Tanuki. Daneben eine alte Balkenwaage – und eine Notiz von Lukas."
+        "Auf einem niedrigen Regal stehen vier Glücksbringer: eine Winkekatze, ein Daruma, eine Kokeshi-Puppe und ein Tanuki. Daneben eine alte Balkenwaage – und eine Notiz von Sophie."
       ],
       raetsel: [
         {
@@ -128,7 +128,7 @@ window.SPIEL = {
             "Der Daruma wiegt so viel wie Winkekatze und Kokeshi zusammen.",
             "Zwei Tanuki wiegen genauso viel wie Daruma und Kokeshi zusammen.",
             "Alle vier Figuren zusammen wiegen 35 Teile.",
-            "Das Gewicht des Daruma öffnet die Teedose.« – L."
+            "Das Gewicht des Daruma öffnet die Teedose.« – S."
           ],
           frage: "Wie viel wiegt der Daruma?",
           loesung: "13",
@@ -168,13 +168,13 @@ window.SPIEL = {
       kurz: "Alles läuft im Kreis",
       bild: "bilder/sushi.svg",
       intro: [
-        "In der Sushi-Bar dreht sich ein Förderband mit bunten Tellern im Kreis. Bernhard ist natürlich schon weg, aber der Koch schiebt euch einen zerknitterten Kassenbon hin.",
-        "»Der Herr Lukas war vorgestern da«, sagt er. »Er hat gesagt, ihr wisst dann schon.«"
+        "In der Sushi-Bar dreht sich ein Förderband mit bunten Tellern im Kreis. Von Bernhard keine Spur, aber der Koch schiebt euch einen zerknitterten Kassenbon hin.",
+        "»Der Herr Bernhard war schon da«, sagt er. »Er hat gesagt, ihr wisst dann schon.«"
       ],
       raetsel: [
         {
           id: "sushi-1",
-          titel: "Lukas’ Rechnung",
+          titel: "Bernhards Rechnung",
           typ: "schloss",
           bild: "bilder/teller.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
@@ -182,7 +182,7 @@ window.SPIEL = {
             "»Ich habe genau 10 Teller gegessen und dafür 37 Euro bezahlt.",
             "Von jeder Farbe war mindestens ein Teller dabei.",
             "Ich hatte mehr blaue als grüne Teller – und genau doppelt so viele rote wie goldene.",
-            "Der Code für die Kasse: wie viele grüne, blaue, rote und goldene Teller ich hatte – genau in dieser Reihenfolge.« – L."
+            "Der Code für die Kasse: wie viele grüne, blaue, rote und goldene Teller ich hatte – genau in dieser Reihenfolge.« – B."
           ],
           frage: "Öffnet die Kasse.",
           loesung: "1621",
@@ -200,8 +200,8 @@ window.SPIEL = {
           bild: "bilder/foerderband.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "Auf jedem Teller am Förderband klebt eine Nummer. Lukas schreibt:",
-            "»Meine Teller folgen einer Regel. Zwei hat Bernhard gegessen – ihre Nummern, von links nach rechts, öffnen die Box des Kochs.«"
+            "Auf jedem Teller am Förderband klebt eine Nummer. Bernhard schreibt:",
+            "»Meine Teller folgen einer Regel. Zwei davon habe ich gegessen – ihre Nummern, von links nach rechts, öffnen die Box des Kochs.«"
           ],
           frage: "Welche Nummern hatten die fehlenden Teller?",
           loesung: "2947",
@@ -235,7 +235,7 @@ window.SPIEL = {
           text: [
             "»Das Becken fasst genau 15 Eimer Wasser. Ich fülle es nur mit Wasser aus der heißen Quelle und aus dem kalten Bach – die Temperaturen stehen auf den Schildern.",
             "Sophies perfektes Bad hat genau 48 Grad. Ja, sie mag es heiß.",
-            "Der Code: wie viele Eimer heißes Wasser, dann wie viele Eimer kaltes Wasser.« – L."
+            "Der Code: wie viele Eimer heißes Wasser, dann wie viele Eimer kaltes Wasser.« – B."
           ],
           frage: "Öffnet den Holzkasten.",
           loesung: "78",
@@ -244,7 +244,7 @@ window.SPIEL = {
             "Rechnet aus, wie viel »Wärme« 15 Eimer mit 48 Grad zusammen haben – und wie viel jeder heiße und jeder kalte Eimer beiträgt.",
             "Jeder heiße Eimer, den ihr gegen einen kalten tauscht, macht das ganze Becken ein Stück wärmer. Um wie viel genau?"
           ],
-          erfolg: "Im Holzkasten liegt ein Fernglas und Lukas’ nächster Zettel: »Schaut mal, wer da alles badet.«"
+          erfolg: "Im Holzkasten liegt ein Fernglas und Sophies nächster Zettel: »Schaut mal, wer da alles badet.«"
         },
         {
           id: "onsen-2",
@@ -253,7 +253,7 @@ window.SPIEL = {
           text: [
             "Durch das Fernglas erkennt ihr im Dampf Badegäste, Schneeaffen – und ein paar Kraniche, die am Beckenrand stehen.",
             "»Ich habe 15 Köpfe gezählt, 42 Beine und 6 Flügel. Affen haben vier Beine, Menschen und Kraniche zwei. Nur Kraniche haben Flügel.",
-            "Der Code für das Gartentor: die Zahl der Affen, dann der Menschen, dann der Kraniche.« – L."
+            "Der Code für das Gartentor: die Zahl der Affen, dann der Menschen, dann der Kraniche.« – S."
           ],
           frage: "Öffnet das Gartentor.",
           loesung: "663",
@@ -384,7 +384,7 @@ window.SPIEL = {
       bild: "bilder/therme.svg",
       intro: [
         "Dampf steigt aus vier Becken, an jedem hängt ein Schild mit der Wassertemperatur.",
-        "Auf einer Liege liegt Bernhards Bademantel. In der Tasche steckt eine Notiz von Lukas."
+        "Auf einer Liege liegt Bernhards Bademantel. In der Tasche steckt eine Notiz von ihm."
       ],
       raetsel: [
         {
@@ -394,19 +394,19 @@ window.SPIEL = {
           bild: "bilder/therme.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Sophie, Bernhard, Tante Resi und ich waren hier – jeder in einem anderen Becken.",
+            "»Sophie, Lukas, Tante Resi und ich waren hier – jeder in einem anderen Becken.",
             "Sophie friert schnell: Ihr Becken hatte mindestens 36 Grad.",
-            "Bernhard saß in einem Becken, das genau 4 Grad kälter war als meins.",
+            "Lukas saß in einem Becken, das genau 4 Grad kälter war als meins.",
             "Mein Becken war wärmer als das von Tante Resi.",
-            "Am Grund meines Beckens liegt der Spindschlüssel.« – L."
+            "Am Grund meines Beckens liegt der Spindschlüssel.« – B."
           ],
           frage: "In welchem Becken taucht ihr?",
           optionen: ["Whirlpool", "Solebecken", "Außenbecken", "Sportbecken"],
           loesung: "Solebecken",
           tipps: [
             "Schreibt die vier Temperaturen auf. Welche Paare von Becken liegen genau 4 Grad auseinander?",
-            "Geht jedes mögliche Paar für Lukas und Bernhard durch. Bleibt dann für Sophie noch ein passendes Becken?",
-            "Tante Resi muss kälter baden als Lukas. Bei einem der übrig gebliebenen Fälle klappt das nicht."
+            "Geht jedes mögliche Paar für Bernhard und Lukas durch. Bleibt dann für Sophie noch ein passendes Becken?",
+            "Tante Resi muss kälter baden als Bernhard. Bei einem der übrig gebliebenen Fälle klappt das nicht."
           ],
           erfolg: "Am Grund liegt ein Spindschlüssel. Die Nummer auf dem Anhänger ist abgerieben."
         },
@@ -417,9 +417,9 @@ window.SPIEL = {
           bild: "bilder/spinde.svg",
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
-            "»Mein Spind ist der mit dem Handtuch. Ein paar Nummernschilder sind abgefallen – aber die Nummern folgen einer Regel.« – L."
+            "»Mein Spind ist der mit dem Handtuch. Ein paar Nummernschilder sind abgefallen – aber die Nummern folgen einer Regel.« – B."
           ],
-          frage: "Welche Nummer hat Lukas’ Spind?",
+          frage: "Welche Nummer hat Bernhards Spind?",
           loesung: "24",
           tipps: [
             "Schaut euch eine vollständige Reihe an: Wie kommt man von einer Nummer zur nächsten?",
@@ -451,7 +451,7 @@ window.SPIEL = {
           text: [
             "»Sophie will genau 15 Minuten schwitzen, keine Sekunde mehr. Eine Uhr gibt es hier nicht, nur die 7-Minuten- und die 11-Minuten-Sanduhr.",
             "Ihr dreht beide gleichzeitig um, wenn Sophie sich hinsetzt. Danach dürft ihr Sanduhren nur in dem Moment umdrehen, in dem eine von ihnen gerade durchgelaufen ist.",
-            "Der Code: nach wie vielen Minuten ihr die 7-Minuten-Sanduhr zum zweiten Mal umdreht.« – L."
+            "Der Code: nach wie vielen Minuten ihr die 7-Minuten-Sanduhr zum zweiten Mal umdreht.« – B."
           ],
           frage: "Nach wie vielen Minuten dreht ihr die kleine Sanduhr zum zweiten Mal um?",
           loesung: "11",
@@ -471,7 +471,7 @@ window.SPIEL = {
           text: [
             "»Mein Lieblingsaufguss duftet weder nach einem Baum noch nach einer Frucht.",
             "Er beginnt genau zweieinhalb Stunden nach dem ersten Frucht-Aufguss des Tages.",
-            "Seine Uhrzeit ist der Code für den Kasten des Saunameisters.« – L."
+            "Seine Uhrzeit ist der Code für den Kasten des Saunameisters.« – S."
           ],
           frage: "Stellt die Uhrzeit ein (Stunden und Minuten).",
           loesung: "1630",
@@ -505,7 +505,7 @@ window.SPIEL = {
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
             "»Drei ganz normale Würfel, aufeinandergestapelt. Ihr seht nur die Vorderseiten und die oberste Fläche.",
-            "Der Code: die Summe aller Augen auf den Flächen, die ihr nicht sehen könnt, weil sie aufeinander oder auf dem Tisch liegen.« – L."
+            "Der Code: die Summe aller Augen auf den Flächen, die ihr nicht sehen könnt, weil sie aufeinander oder auf dem Tisch liegen.« – B."
           ],
           frage: "Öffnet die Spieleschachtel.",
           loesung: "16",
@@ -524,7 +524,7 @@ window.SPIEL = {
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
             "»Jede Schachtel hat einen kleinen Aufkleber mit einer Zahl. Liegende Schachteln sind nur Ablenkung.",
-            "Die Zahl sagt euch, welcher Buchstabe im Namen des Spiels zählt. Von links nach rechts ergibt sich das letzte Zimmer.« – L."
+            "Die Zahl sagt euch, welcher Buchstabe im Namen des Spiels zählt. Von links nach rechts ergibt sich das letzte Zimmer.« – S."
           ],
           frage: "Welches Wort ergibt sich?",
           platzhalter: "Wort eintippen",
@@ -561,7 +561,7 @@ window.SPIEL = {
             "Kein Wert kommt doppelt vor. Alle sechs zusammen ergeben 41.",
             "Das fünfte Kabel ist eine Primzahl.",
             "Multipliziert man die drei verdeckten Werte, ist das Ergebnis durch 9 teilbar.",
-            "Die drei verdeckten Werte, von links nach rechts, sind der Code.« – L."
+            "Die drei verdeckten Werte, von links nach rechts, sind der Code.« – S."
           ],
           frage: "Welche Werte haben die verdeckten Kabel?",
           loesung: "3611",
@@ -580,7 +580,7 @@ window.SPIEL = {
           bildText: "Tippe aufs Bild, um es zu vergrößern.",
           text: [
             "»Letzte Mission! Auf diesem Ständer sind vier Kabel verdeckt: zwei rote (2,5 und 11,5), ein blaues (6) und ein gelbes (8,1).",
-            "Nur wenn ihr das gelbe Kabel durchschneidet, ist die Bombe entschärft. Erwischt ihr ein rotes … dann gibt’s kein Geschenk.« – L."
+            "Nur wenn ihr das gelbe Kabel durchschneidet, ist die Bombe entschärft. Erwischt ihr ein rotes … dann gibt’s kein Geschenk.« – S."
           ],
           frage: "Welches Kabel schneidet ihr durch?",
           optionen: ["Kabel B", "Kabel D", "Kabel E", "Kabel G"],
