@@ -4,7 +4,7 @@
 <rect x="150" y="30" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M175 50h65" stroke="#5E9390" stroke-width="3"/><path d="M175 60h65" stroke="#5E9390" stroke-width="3"/><path d="M175 70h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="245" cy="105" r="7" fill="#C9A45C"/>
-<rect x="175" y="90" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="200" y="116" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">15</text>
+<rect x="170" y="90" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="200" y="116" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">2</text>
 <rect x="275" y="30" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M300 50h65" stroke="#5E9390" stroke-width="3"/><path d="M300 60h65" stroke="#5E9390" stroke-width="3"/><path d="M300 70h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="370" cy="105" r="7" fill="#C9A45C"/>
@@ -12,31 +12,31 @@
 <rect x="400" y="30" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M425 50h65" stroke="#5E9390" stroke-width="3"/><path d="M425 60h65" stroke="#5E9390" stroke-width="3"/><path d="M425 70h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="495" cy="105" r="7" fill="#C9A45C"/>
-<rect x="425" y="90" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="450" y="116" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">17</text>
+<rect x="420" y="90" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="450" y="116" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">8</text>
 <rect x="525" y="30" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M550 50h65" stroke="#5E9390" stroke-width="3"/><path d="M550 60h65" stroke="#5E9390" stroke-width="3"/><path d="M550 70h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="620" cy="105" r="7" fill="#C9A45C"/>
-<rect x="550" y="90" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="575" y="116" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">18</text>
+<rect x="545" y="90" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="575" y="116" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">16</text>
 <rect x="150" y="165" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M175 185h65" stroke="#5E9390" stroke-width="3"/><path d="M175 195h65" stroke="#5E9390" stroke-width="3"/><path d="M175 205h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="245" cy="240" r="7" fill="#C9A45C"/>
-<rect x="175" y="225" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="200" y="251" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">21</text>
+<rect x="170" y="225" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="200" y="251" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">3</text>
 <rect x="275" y="165" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M300 185h65" stroke="#5E9390" stroke-width="3"/><path d="M300 195h65" stroke="#5E9390" stroke-width="3"/><path d="M300 205h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="370" cy="240" r="7" fill="#C9A45C"/>
-<rect x="300" y="225" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="325" y="251" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">22</text>
+<rect x="295" y="225" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="325" y="251" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">6</text>
 <rect x="400" y="165" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M425 185h65" stroke="#5E9390" stroke-width="3"/><path d="M425 195h65" stroke="#5E9390" stroke-width="3"/><path d="M425 205h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="495" cy="240" r="7" fill="#C9A45C"/>
-<rect x="425" y="225" width="50" height="34" rx="4" fill="none" stroke="#5E9390" stroke-width="2" stroke-dasharray="4 4"/>
+<rect x="420" y="225" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="450" y="251" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">12</text>
 <rect x="525" y="165" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M550 185h65" stroke="#5E9390" stroke-width="3"/><path d="M550 195h65" stroke="#5E9390" stroke-width="3"/><path d="M550 205h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="620" cy="240" r="7" fill="#C9A45C"/>
-<rect x="550" y="225" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="575" y="251" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">24</text>
+<rect x="550" y="225" width="50" height="34" rx="4" fill="none" stroke="#5E9390" stroke-width="2" stroke-dasharray="4 4"/>
 <rect x="150" y="300" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M175 320h65" stroke="#5E9390" stroke-width="3"/><path d="M175 330h65" stroke="#5E9390" stroke-width="3"/><path d="M175 340h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="245" cy="375" r="7" fill="#C9A45C"/>
-<rect x="175" y="360" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="200" y="386" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">27</text>
+<rect x="170" y="360" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="200" y="386" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">5</text>
 <rect x="275" y="300" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M300 320h65" stroke="#5E9390" stroke-width="3"/><path d="M300 330h65" stroke="#5E9390" stroke-width="3"/><path d="M300 340h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="370" cy="375" r="7" fill="#C9A45C"/>
@@ -44,10 +44,10 @@
 <rect x="400" y="300" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M425 320h65" stroke="#5E9390" stroke-width="3"/><path d="M425 330h65" stroke="#5E9390" stroke-width="3"/><path d="M425 340h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="495" cy="375" r="7" fill="#C9A45C"/>
-<rect x="425" y="360" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="450" y="386" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">29</text>
+<rect x="420" y="360" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="450" y="386" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">20</text>
 <rect x="525" y="300" width="115" height="125" rx="6" fill="#7FB3B0" stroke="#5E9390" stroke-width="3"/>
 <path d="M550 320h65" stroke="#5E9390" stroke-width="3"/><path d="M550 330h65" stroke="#5E9390" stroke-width="3"/><path d="M550 340h65" stroke="#5E9390" stroke-width="3"/>
 <circle cx="620" cy="375" r="7" fill="#C9A45C"/>
-<rect x="550" y="360" width="50" height="34" rx="4" fill="#FFFCFA"/><text x="575" y="386" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">30</text>
-<path d="M480 233 q-10 30 -6 70 h40 q4 -40 -6 -70z" fill="#E8C4BD" stroke="#C27E74" stroke-width="2"/><path d="M476 285 h38" stroke="#C27E74" stroke-width="3"/>
+<rect x="545" y="360" width="60" height="34" rx="4" fill="#FFFCFA"/><text x="575" y="386" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A" font-family="Helvetica, Arial, sans-serif">40</text>
+<path d="M605 233 q-10 30 -6 70 h40 q4 -40 -6 -70z" fill="#E8C4BD" stroke="#C27E74" stroke-width="2"/><path d="M601 285 h38" stroke="#C27E74" stroke-width="3"/>
 </svg>

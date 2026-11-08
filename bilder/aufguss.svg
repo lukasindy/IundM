@@ -1,16 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
 <rect width="800" height="500" fill="#C99D74"/>
-<rect x="120" y="30" width="560" height="440" rx="10" fill="#8A6A4E"/>
-<rect x="140" y="50" width="520" height="400" rx="6" fill="#2B3530"/>
-<text x="400" y="110" text-anchor="middle" font-size="40" font-style="italic" fill="#F3EBDD">Aufgussplan</text>
-<path d="M250 130 h300" stroke="#F3EBDD" stroke-width="2" opacity=".5"/>
-<text x="200" y="190" font-size="38" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">15:00</text><text x="600" y="190" text-anchor="end" font-size="40" font-style="italic" fill="#F3EBDD">Birke</text>
-<path d="M330 178 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".5"/>
-<text x="200" y="258" font-size="38" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">16:30</text><text x="600" y="258" text-anchor="end" font-size="40" font-style="italic" fill="#F3EBDD">Minze</text>
-<path d="M330 246 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".5"/>
-<text x="200" y="326" font-size="38" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">18:00</text><text x="600" y="326" text-anchor="end" font-size="40" font-style="italic" fill="#F3EBDD">Orange</text>
-<path d="M330 314 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".5"/>
-<text x="200" y="394" font-size="38" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">19:30</text><text x="600" y="394" text-anchor="end" font-size="40" font-style="italic" fill="#F3EBDD">Zirbe</text>
-<path d="M330 382 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".5"/>
-<g transform="translate(700 380)"><path d="M-30 -60 h60 l-26 55 26 55 h-60 l26 -55z" fill="#F3EBDD" stroke="#8A6A4E" stroke-width="4"/><path d="M-14 -40 h28 l-14 30z M-18 46 h36 l-18 -18z" fill="#E9B44C"/></g>
+<rect x="110" y="16" width="580" height="468" rx="10" fill="#8A6A4E"/>
+<rect x="130" y="34" width="540" height="432" rx="6" fill="#2B3530"/>
+<text x="400" y="84" text-anchor="middle" font-size="36" font-style="italic" fill="#F3EBDD">Aufgussplan</text>
+<path d="M250 102 h300" stroke="#F3EBDD" stroke-width="2" opacity=".5"/>
+<text x="175" y="150" font-size="32" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">14:00</text><text x="625" y="150" text-anchor="end" font-size="34" font-style="italic" fill="#F3EBDD">Zitrone</text>
+<path d="M290 140 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".45"/>
+<text x="175" y="208" font-size="32" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">15:00</text><text x="625" y="208" text-anchor="end" font-size="34" font-style="italic" fill="#F3EBDD">Birke</text>
+<path d="M290 198 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".45"/>
+<text x="175" y="266" font-size="32" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">16:30</text><text x="625" y="266" text-anchor="end" font-size="34" font-style="italic" fill="#F3EBDD">Minze</text>
+<path d="M290 256 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".45"/>
+<text x="175" y="324" font-size="32" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">17:15</text><text x="625" y="324" text-anchor="end" font-size="34" font-style="italic" fill="#F3EBDD">Eukalyptus</text>
+<path d="M290 314 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".45"/>
+<text x="175" y="382" font-size="32" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">18:00</text><text x="625" y="382" text-anchor="end" font-size="34" font-style="italic" fill="#F3EBDD">Orange</text>
+<path d="M290 372 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".45"/>
+<text x="175" y="440" font-size="32" fill="#F2D488" font-family="Helvetica, Arial, sans-serif">19:30</text><text x="625" y="440" text-anchor="end" font-size="34" font-style="italic" fill="#F3EBDD">Zirbe</text>
+<path d="M290 430 h120" stroke="#F3EBDD" stroke-width="2" stroke-dasharray="3 8" opacity=".45"/>
 </svg>

@@ -1,24 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Georgia, 'Times New Roman', serif">
 <rect width="800" height="500" fill="#F1E6E0"/>
-<rect x="40" y="30" width="720" height="440" fill="#8A6A4E"/>
-<rect x="60" y="50" width="680" height="400" fill="#F1E6E0"/>
-<rect x="60" y="430" width="680" height="20" fill="#6B4E3A"/>
-<rect x="80" y="386" width="110" height="44" rx="4" fill="#22302A" stroke="#00000022" stroke-width="2"/>
-<text x="135.0" y="417.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#F3EBDD">Schach</text>
-<rect x="80" y="342" width="110" height="44" rx="4" fill="#B83A30" stroke="#00000022" stroke-width="2"/>
-<text x="135.0" y="373.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#FFFFFF">Dame</text>
-<rect x="200" y="100" width="64" height="330" rx="4" fill="#3E6656" stroke="#00000022" stroke-width="2"/>
-<text x="0" y="0" transform="translate(242.0 265.0) rotate(-90)" text-anchor="middle" font-size="32" font-weight="bold" fill="#F3EBDD">Backgammon</text>
-<rect x="274" y="100" width="64" height="330" rx="4" fill="#C9A45C" stroke="#00000022" stroke-width="2"/>
-<text x="0" y="0" transform="translate(316.0 265.0) rotate(-90)" text-anchor="middle" font-size="32" font-weight="bold" fill="#22302A">Oware</text>
-<rect x="348" y="386" width="110" height="44" rx="4" fill="#7FA9C4" stroke="#00000022" stroke-width="2"/>
-<text x="403.0" y="417.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A">Halma</text>
-<rect x="468" y="100" width="64" height="330" rx="4" fill="#B83A30" stroke="#00000022" stroke-width="2"/>
-<text x="0" y="0" transform="translate(510.0 265.0) rotate(-90)" text-anchor="middle" font-size="32" font-weight="bold" fill="#FFFFFF">Mühle</text>
-<rect x="542" y="386" width="110" height="44" rx="4" fill="#F3EBDD" stroke="#00000022" stroke-width="2"/>
-<text x="597.0" y="417.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#22302A">Go</text>
-<rect x="542" y="342" width="110" height="44" rx="4" fill="#6B4E3A" stroke="#00000022" stroke-width="2"/>
-<text x="597.0" y="373.0" text-anchor="middle" font-size="24" font-weight="bold" fill="#F3EBDD">Schach</text>
-<rect x="662" y="100" width="64" height="330" rx="4" fill="#E8C4BD" stroke="#00000022" stroke-width="2"/>
-<text x="0" y="0" transform="translate(704.0 265.0) rotate(-90)" text-anchor="middle" font-size="32" font-weight="bold" fill="#22302A">Bingo</text>
+<rect x="30" y="30" width="740" height="440" fill="#8A6A4E"/>
+<rect x="50" y="50" width="700" height="400" fill="#F1E6E0"/>
+<rect x="50" y="430" width="700" height="20" fill="#6B4E3A"/>
+<rect x="66" y="386" width="118" height="44" rx="4" fill="#22302A" stroke="#00000022" stroke-width="2"/>
+<text x="117.0" y="416.0" text-anchor="middle" font-size="21" font-weight="bold" fill="#F3EBDD">Schach</text>
+<circle cx="168" cy="408.0" r="12" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="168" y="413.0" text-anchor="middle" font-size="15" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">2</text>
+<rect x="66" y="342" width="118" height="44" rx="4" fill="#7FA9C4" stroke="#00000022" stroke-width="2"/>
+<text x="117.0" y="372.0" text-anchor="middle" font-size="21" font-weight="bold" fill="#22302A">Halma</text>
+<circle cx="168" cy="364.0" r="12" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="168" y="369.0" text-anchor="middle" font-size="15" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">3</text>
+<rect x="194" y="90" width="62" height="340" rx="4" fill="#3E6656" stroke="#00000022" stroke-width="2"/>
+<text transform="translate(235.0 280.0) rotate(-90)" text-anchor="middle" font-size="30" font-weight="bold" fill="#F3EBDD">Backgammon</text>
+<circle cx="225.0" cy="116" r="15" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="225.0" y="123" text-anchor="middle" font-size="19" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">1</text>
+<rect x="266" y="90" width="62" height="340" rx="4" fill="#C9A45C" stroke="#00000022" stroke-width="2"/>
+<text transform="translate(307.0 280.0) rotate(-90)" text-anchor="middle" font-size="30" font-weight="bold" fill="#22302A">Domino</text>
+<circle cx="297.0" cy="116" r="15" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="297.0" y="123" text-anchor="middle" font-size="19" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">2</text>
+<rect x="338" y="386" width="118" height="44" rx="4" fill="#B83A30" stroke="#00000022" stroke-width="2"/>
+<text x="389.0" y="416.0" text-anchor="middle" font-size="21" font-weight="bold" fill="#FFFFFF">Uno</text>
+<circle cx="440" cy="408.0" r="12" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="440" y="413.0" text-anchor="middle" font-size="15" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">1</text>
+<rect x="466" y="90" width="62" height="340" rx="4" fill="#7FA9C4" stroke="#00000022" stroke-width="2"/>
+<text transform="translate(507.0 280.0) rotate(-90)" text-anchor="middle" font-size="30" font-weight="bold" fill="#22302A">Memory</text>
+<circle cx="497.0" cy="116" r="15" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="497.0" y="123" text-anchor="middle" font-size="19" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">1</text>
+<rect x="538" y="386" width="118" height="44" rx="4" fill="#E8C4BD" stroke="#00000022" stroke-width="2"/>
+<text x="589.0" y="416.0" text-anchor="middle" font-size="21" font-weight="bold" fill="#22302A">Tabu</text>
+<circle cx="640" cy="408.0" r="12" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="640" y="413.0" text-anchor="middle" font-size="15" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">4</text>
+<rect x="538" y="342" width="118" height="44" rx="4" fill="#F3EBDD" stroke="#00000022" stroke-width="2"/>
+<text x="589.0" y="372.0" text-anchor="middle" font-size="21" font-weight="bold" fill="#22302A">Kniffel</text>
+<circle cx="640" cy="364.0" r="12" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="640" y="369.0" text-anchor="middle" font-size="15" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">2</text>
+<rect x="538" y="298" width="118" height="44" rx="4" fill="#6B4E3A" stroke="#00000022" stroke-width="2"/>
+<text x="589.0" y="328.0" text-anchor="middle" font-size="21" font-weight="bold" fill="#F3EBDD">Risiko</text>
+<circle cx="640" cy="320.0" r="12" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="640" y="325.0" text-anchor="middle" font-size="15" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">3</text>
+<rect x="666" y="90" width="62" height="340" rx="4" fill="#B83A30" stroke="#00000022" stroke-width="2"/>
+<text transform="translate(707.0 280.0) rotate(-90)" text-anchor="middle" font-size="30" font-weight="bold" fill="#FFFFFF">Scrabble</text>
+<circle cx="697.0" cy="116" r="15" fill="#FFF3B8" stroke="#C9A45C" stroke-width="2"/><text x="697.0" y="123" text-anchor="middle" font-size="19" font-weight="bold" font-family="Helvetica, Arial, sans-serif" fill="#22302A">5</text>
 </svg>
