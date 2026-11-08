@@ -1,7 +1,7 @@
 {
-  "name": "I & M",
-  "short_name": "I & M",
-  "description": "I & M – ein Hochzeits-Escape-Room fürs Handy.",
+  "name": "Iris & Michi",
+  "short_name": "Iris & Michi",
+  "description": "Iris & Michi – ein Hochzeits-Escape-Room fürs Handy.",
   "lang": "de",
   "start_url": "./",
   "scope": "./",

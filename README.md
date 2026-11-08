@@ -1,4 +1,4 @@
-# I & M – Die verschwundenen Ringe
+# Iris & Michi – Die verschwundenen Ringe
 
 Ein Hochzeits-Escape-Room fürs Handy. Onkel Ferdi hat die Ringe versteckt, und seine Spur führt durch vier Themenwelten:
 

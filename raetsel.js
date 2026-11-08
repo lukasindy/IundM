@@ -26,12 +26,12 @@
 */
 
 window.SPIEL = {
-  titel: "I & M",
+  titel: "Iris & Michi",
   untertitel: "Die verschwundenen Ringe",
   startBild: "bilder/titel.svg",
   startText: [
-    "Heute heiraten I & M. Ihr seid die Trauzeugen – und habt nur eine einzige Aufgabe: auf die Ringe aufpassen.",
-    "Leider hat Onkel Ferdi sie versteckt. Das macht er bei jeder Familienhochzeit. Diesmal hat er das ganze Hotel in eine Rätselreise verwandelt: acht Zimmer, jedes erinnert an etwas, das I & M lieben – Japan, das Casino, die Therme und ihre Spieleabende.",
+    "Heute heiraten Iris & Michi. Ihr seid die Trauzeugen – und habt nur eine einzige Aufgabe: auf die Ringe aufpassen.",
+    "Leider hat Onkel Ferdi sie versteckt. Das macht er bei jeder Familienhochzeit. Diesmal hat er das ganze Hotel in eine Rätselreise verwandelt: acht Zimmer, jedes erinnert an etwas, das Iris & Michi lieben – Japan, das Casino, die Therme und ihre Spieleabende.",
     "Findet die Ringe, bevor die Trauung beginnt."
   ],
 
@@ -488,7 +488,7 @@ window.SPIEL = {
     titel: "Der Code fürs Schloss",
     bild: "bilder/kaestchen.svg",
     text: [
-      "Ihr habt alle vier Welten von I & M bereist und aus jeder eine Ziffer mitgebracht.",
+      "Ihr habt alle vier Welten von Iris & Michi bereist und aus jeder eine Ziffer mitgebracht.",
       "Jetzt seid ihr dran: Stellt die vier Ziffern am echten Schloss ein – genau in dieser Reihenfolge. Dahinter warten die Ringe."
     ]
   }

@@ -125,7 +125,7 @@
     on("#reset-ja", function () { stand = leererStand(); speichern(); zeichnen(); });
   }
   function titelSchoen(t) {
-    // "I & M" -> Et-Zeichen kursiv und farbig; sonst das letzte Wort kursiv in eigener Zeile
+    // "Iris & Michi" -> Et-Zeichen kursiv und farbig; sonst das letzte Wort kursiv in eigener Zeile
     if (t.indexOf("&") >= 0) {
       return t.split("&").map(function (s) { return esc(s.trim()); }).join(' <em class="amp">&amp;</em> ');
     }
