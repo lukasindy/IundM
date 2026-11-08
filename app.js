@@ -558,18 +558,40 @@
       .catch(function () { return null; });
   }
   function aktualisieren() {
-    var schritte = [];
+    // 1. Hinweis zeigen, damit man sieht, dass etwas passiert
+    var hinweis = document.createElement("div");
+    hinweis.className = "update-banner";
+    hinweis.innerHTML = "<span>Neueste Version wird geladen …</span>";
+    document.body.appendChild(hinweis);
+
+    // 2. Alle Dateien ausdrücklich frisch vom Server holen (umgeht den Zwischenspeicher des Handys)
+    var dateien = ["./", "index.html", "app.js", "raetsel.js", "style.css", "manifest.webmanifest", "sw.js"];
+    if (SPIEL.startBild) dateien.push(SPIEL.startBild);
+    SPIEL.raeume.forEach(function (r) {
+      if (r.bild) dateien.push(r.bild);
+      r.raetsel.forEach(function (x) { if (x.bild) dateien.push(x.bild); });
+    });
+    if (SPIEL.finale && SPIEL.finale.bild) dateien.push(SPIEL.finale.bild);
+    var frisch = dateien.filter(function (d, i) { return dateien.indexOf(d) === i; }).map(function (d) {
+      return fetch(d, { cache: "reload" }).catch(function () {});
+    });
+
+    // 3. Alten Offline-Speicher und Service Worker entfernen (registriert sich beim Start neu)
+    var aufraeumen = [];
     try {
-      if (navigator.serviceWorker) schritte.push(navigator.serviceWorker.getRegistrations().then(function (rs) {
-        return Promise.all(rs.map(function (r) { return r.update().catch(function () {}); }));
+      if (navigator.serviceWorker) aufraeumen.push(navigator.serviceWorker.getRegistrations().then(function (rs) {
+        return Promise.all(rs.map(function (r) { return r.unregister().catch(function () {}); }));
       }));
-      if (window.caches) schritte.push(caches.keys().then(function (ks) {
+      if (window.caches) aufraeumen.push(caches.keys().then(function (ks) {
         return Promise.all(ks.map(function (k) { return caches.delete(k); }));
       }));
     } catch (e) {}
-    Promise.all(schritte).catch(function () {}).then(function () {
-      location.replace(location.pathname + "?v=" + Date.now());
-    });
+
+    // 4. Neu laden – der Spielstand bleibt erhalten
+    var fertig = false;
+    function neuLaden() { if (fertig) return; fertig = true; location.replace(location.pathname + "?v=" + Date.now()); }
+    Promise.all(frisch.concat(aufraeumen)).then(neuLaden, neuLaden);
+    setTimeout(neuLaden, 8000); // ohne Netz nicht ewig warten
   }
   function zeigeUpdateBanner() {
     if (document.getElementById("update-banner")) return;
